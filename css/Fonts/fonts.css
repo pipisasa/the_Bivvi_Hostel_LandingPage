@@ -1,0 +1,13 @@
+@font-face{
+    font-family: Heebo;
+    src: url(./ttf/Heebo-Medium.ttf);
+}
+@font-face{
+    font-family: Heebo-light;
+    src: url(./ttf/Heebo-Light.ttf)
+}
+
+@font-face{
+    font-family: 'Trump-Gothic-Pro';
+    src: url(./ttf/movipcb.ttf)
+}

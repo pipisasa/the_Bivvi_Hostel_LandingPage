@@ -1,0 +1,478 @@
+.flex{
+    display: flex;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+.Header{
+    font-family: Heebo;
+    font-weight: 500;
+    line-height: 1em;
+    padding:0 16px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.Logo{
+    box-sizing: border-box;
+    padding: 24px 24px;
+    -webkit-box-flex: 1;
+    flex: 0 0 auto;
+    display: flex;
+}
+
+.Logo img{
+    max-width: 107px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.Header-nav{
+    padding: 24px 24px;
+    white-space: nowrap;
+    font-style: normal;
+    font-size: 10px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+
+.Header-nav-inner{
+    display: flex;
+}
+
+.Header-nav-item{
+    margin: 0 1.87em;
+    padding: .618em 0;
+    text-decoration: none;
+    transition: color 170ms ease-in-out, background-color 170ms ease-in-out;
+}
+
+.Header-nav-item--active, .Header-nav-item:hover {
+    color: #1a77f8;
+}
+
+.Header-nav-folder {
+    display: flex;
+    flex-direction: column;
+    transition: left 0s linear,transform .2s ease-out,opacity .2s ease-out;
+    background-color: #fff;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100%;
+    left: -99999px;
+    z-index: 1002;
+    margin-left: -1em;
+    padding: 1em;
+    opacity: 0;
+    white-space: nowrap;
+    text-align: left;
+    color: #818283;
+}
+
+.Header-nav-item--folder:hover .Header-nav-folder{
+    left: auto;
+    top: auto;
+    opacity: 1;
+}
+
+.Header-nav-folder-item:hover{
+    color: #1a77f8;
+}
+
+.section{
+    padding: 14px 40px;
+}
+
+.Welcome{
+    height: 100vh;
+    background-image: url('../img/CommonArea1+\(1\).jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+#Welcome-logo {
+    height: 60vh;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 10%);
+}
+button.Welcome--BookNowBtn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 60%);
+    background: none;
+    border: 2px solid;
+    color: white;
+    padding: 21px 34px;
+    font-family: Heebo;
+    font-size: 14px;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button.Welcome--BookNowBtn:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid #FFF;
+}
+
+
+.rooms-title {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #00000042;
+    font-family: 'Trump-Gothic-Pro';
+    font-size: 5rem;
+    letter-spacing: 0.1em;
+    color: #242424;
+}
+.rooms-title h1 {
+    margin: 16px 0;
+}
+.rooms-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rooms-card {
+    padding: 17px;
+    display: flex;
+    flex-direction: column;
+    width: 20.73vw;
+    height: 20.73vw;
+    color: #fff;
+}
+.rooms-card-img{
+    transition: 0.5s;
+    position: absolute;
+    z-index: -1;
+}
+.rooms-card-container:hover .rooms-card-img {
+    transform: scale(1.1);
+}
+
+.rooms-card-container {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.rooms-card-p{
+    font-family: 'Heebo-light';
+    margin: 0;
+    text-transform: uppercase;
+}
+p.rooms-card-title {
+    font-family: "Trump-Gothic-Pro";
+    font-size: 70px;
+    text-align: center;
+    margin: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    line-height: 1.2em;
+}
+
+.rooms-card-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0000004d;
+}
+
+.rooms-card button {
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: Heebo;
+    font-size: 17px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: .29em;
+    line-height: 1em;
+    text-transform: uppercase;
+    border-radius: 0em;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 2% 9%;
+}
+
+.rooms-card button:hover{
+    color: black;
+    background: white;
+}
+
+.rooms--form{
+    background: #191606;
+    font-family: Heebo;
+    font-size: 15px;
+    padding: 29px 14.5px;
+    color: #fff;
+    width: 100%;
+    margin: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rooms-form-title{
+    font-family: "Trump-Gothic-Pro";
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    font-size: 70px;
+    line-height: 1.2em;
+    margin: 0;
+}
+.rooms-form-p{
+    margin: 17px 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 1.6em;
+}
+.rooms-form-input{
+    padding: 1em;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.12);
+    font-family: inherit;
+    font-size: 15px;
+    line-height: normal;
+    outline: none;
+}
+.rooms-form-btn{
+    padding: 1.1em 2.5em;
+    border: 2px solid #fff !important;
+    background: none;
+    color: white;
+    font-family: inherit;
+    transition: 0.3s;
+}
+input.rooms-form-btn:hover {
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+p.rooms-form-subtitle {
+    font-family: Heebo-light;
+    color: #ffffffa6;
+}
+
+.the-bivvouac{
+    height: 100vh;
+    background-image: url('../img/instagram-com-jamie_fenn-422039-unsplash.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
+.the-bivvouac-desc {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Trump-Gothic-Pro';
+    background-color: #00000075;
+}
+.the-bivvouac-desc h3{
+    font-size: 70px;
+    width: 85%;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+.the-bivvouac-desc p {
+    font-size: 57px;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
+.instagram {
+    padding: 14px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.instagarm-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+img.instagarm-img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 18vw;
+    height: 18vw;
+    cursor: pointer;
+}
+.instagram-title h2 {
+    margin: 30px 0;
+    font-family: Heebo;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: .07em;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+
+.contactUs{
+    padding: 14px 40px;
+}
+.contactUs-title {
+    font-family: "Trump-Gothic-Pro";
+    letter-spacing: 0.1em;
+    font-size: 10rem;
+    margin: 2rem 0 2rem 0;
+}
+.contactUs-body{
+    color: rgba(66,66,66,.65);
+    font-family: Heebo-light;
+    display: flex;
+}
+.contactUs-form-top {
+    display: flex;
+    justify-content: space-between;
+}
+.contactUs-form-name-input {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2px;
+    width: 100%;
+}
+.contactUs-left-desc a {
+    text-decoration: underline;
+}
+.contactUs-left-desc a:hover {
+    color: black;
+}
+.contactUs-left, .contactUs-right{
+    width: 50%;
+    padding: 1rem;
+}
+.contactUs-left-desc {
+    padding: 0;
+    margin: 0;
+}
+.contactUs-form-input-title {
+    margin: 26px 0 0 0;
+}
+.contactUs-form-name-input p {
+    margin: 0;
+}
+.contactUs-form-input{
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0 4px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    color: #000;
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: normal;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+.contactUs-form-input-text{
+    width: 100% !important;
+    min-height: 85px !important;
+    padding: 12px;
+    margin: 6px 0 4px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    color: #000;
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: normal;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+
+.footer{
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: #191606;
+    color: white;
+    box-sizing: border-box;
+    padding: 75px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    width: 100%;
+}
+
+.footer-left, .footer-center, .footer-right{
+    width: 33.3333%;
+    min-width: 300px;
+}
+
+.footer-left span {
+    font-family: Heebo-light;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.1em;
+}
+.footer a {
+    /* text-decoration: underline;
+    text-underline-position: under; */
+    border-bottom: 1px solid;
+    border-color: rgba(248,248,252,.15);
+}
+.footer a:hover{
+    color: rgba(248,248,252,.6);
+}
+.footer-left h2 {
+    margin: 0 0 1rem 0;
+    font-size: 13px;
+}
+.footer-center {
+    font-family: Heebo;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    line-height: 1.8;
+}
+.footer-right-title {
+    font-family: Heebo;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+}
+form.footer-form {
+    margin: 5rem 0 0 0;
+}
+.copyright {
+    margin: 12rem 0 0 0;
+}
