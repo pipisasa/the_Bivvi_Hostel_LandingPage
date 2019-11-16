@@ -11,8 +11,28 @@ a {
     text-decoration: none;
 }
 
-
-
+.anchorBar {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+}
+.anchorBar a {
+    padding: 10px;
+    border: 1px solid;
+    color: white;
+    border-radius: 100px;
+    margin: 4px;
+    transition: 0.1s;
+    box-shadow: inset 0 0 0 1px #00000063;
+}
+.anchorBar a:hover{
+    padding: 15px;
+}
 .Header{
     font-family: Heebo;
     font-weight: 500;

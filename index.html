@@ -4,11 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#anchorBar").on("click","a", (event)=>{
+                //отменяем стандартную обработку нажатия по ссылке
+                event.preventDefault();
+                //забираем идентификатор бlока с атрибута href
+                let id  = event.target.getAttribute('href')
+
+                //узнаем высоту от начала страницы до блока на который ссылается якорь
+                let top = $(id).offset().top;
+                
+                //анимируем переход на расстояние - top за 1500 мс
+                $('body,html').animate({scrollTop: top}, 1500);
+            });
+        });
+    </script>
     <link rel="stylesheet" href="./css/Fonts/fonts.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>The Bivvi Hostel | Breckenrodge, CO</title>
 </head>
 <body>
+    <div class="anchorBar" id="anchorBar">
+            <a href="#Welcome"></a>
+            <a href="#Rooms"></a>
+            <a href="#NewsLettrer"></a>
+            <a href="#Bivouac"></a>
+            <a href="#Instagram"></a>
+            <a href="#Contact"></a>
+            <a href="#Bottom"></a>
+    </div>
+
     <header class="Header">
         <div class="top-left">
             <a class="Logo" href="/">
@@ -67,11 +94,13 @@
     </header>
 
     <div class="Welcome section">
+        <a id="Welcome" name="Welcome"></a>
         <img id="Welcome-logo" src="./img/Logo_White_Medium_2.png" alt="Logo_White_Medium_2.png">
         <button class="Welcome--BookNowBtn">Book Now</button>
     </div>
 
     <div class="rooms section">
+        <a id="Rooms" name="Rooms"></a>
         <div class="rooms-title">
             <h1>OUR ROOMS</h1>
         </div>
@@ -157,6 +186,7 @@
                 </div>
             </div>
             <div class="rooms--form">
+                <a id="NewsLettrer" name="NewsLettrer"></a>
                 <h2 class="rooms-form-title">Join the club</h2>
                 <p class="rooms-form-p">Sign up now with your email address to receive the latest Bivvi news and updates!</p>
                 <form class="rooms-form">
@@ -169,6 +199,7 @@
     </div>
 
     <div class="the-bivvouac">
+        <a id="Bivouac" name="Bivouac"></a>
         <div class="the-bivvouac-desc">
             <h3>“AN IMPROVISED ENCAMPMENT CONSTRUCTED OF NATURAL MATERIALS SUCH AS THOSE USED IN SCOUTING AND MOUNTAINEERING.”</h3>
             <p>— BIVO͞OˌAK/</p>
@@ -176,6 +207,7 @@
     </div>
 
     <div class="instagram">
+        <a id="Instagram" name="Instagram"></a>
         <div class="instagram-title">
             <h2>@THEBIVVIHOSTEL</h2>
         </div>
@@ -194,6 +226,7 @@
     </div>
 
     <div class="contactUs">
+        <a id="Contact" name="Contact"></a>
         <h2 class="contactUs-title">CONTACT US</h2>
         <div class="contactUs-body">
             <div class="contactUs-left">
@@ -243,6 +276,7 @@
     </div>
     
     <footer class="footer">
+        <a id="Bottom" name="Bottom"></a>
         <div class="footer-container">
             <div class="footer-left">
                 <h2>THE BIVVI HOSTEL</h2>
@@ -270,5 +304,7 @@
         </div>
         <p class="copyright">© 2019 Copyright by Pipisasa. All rights reserved.</p>
     </footer>
+
+
 </body>
 </html>
