@@ -5,40 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $("#anchorBar").on("click","a", (event)=>{
-                //отменяем стандартную обработку нажатия по ссылке
-                event.preventDefault();
-                //забираем идентификатор бlока с атрибута href
-                let id  = event.target.getAttribute('href')
-
-                //узнаем высоту от начала страницы до блока на который ссылается якорь
-                let top = $(id).offset().top;
-                
-                //анимируем переход на расстояние - top за 1500 мс
-                $('body,html').animate({scrollTop: top}, 1500);
-            });
-        });
-    </script>
+    <script type="text/javascript" src="./js/main.js"></script>
     <link rel="stylesheet" href="./css/Fonts/fonts.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>The Bivvi Hostel | Breckenrodge, CO</title>
 </head>
 <body>
     <div class="anchorBar" id="anchorBar">
-            <a href="#Welcome"></a>
-            <a href="#Rooms"></a>
-            <a href="#NewsLettrer"></a>
-            <a href="#Bivouac"></a>
-            <a href="#Instagram"></a>
-            <a href="#Contact"></a>
-            <a href="#Bottom"></a>
+            <div><a href="#Welcome"></a></div>
+            <div><a href="#Rooms"></a></div>
+            <div><a href="#NewsLettrer"></a></div>
+            <div><a href="#Bivouac"></a></div>
+            <div><a href="#Instagram"></a></div>
+            <div><a href="#Contact"></a></div>
+            <div><a href="#Bottom"></a></div>
     </div>
 
     <header class="Header">
         <div class="top-left">
-            <a class="Logo" href="/">
+            <a class="Logo" href="./index.html">
                 <img src="./img/BlogoTransparent1.png">
             </a>
         </div>
@@ -46,41 +31,41 @@
         <div class="top-right">
             <nav class="Header-nav">
                 <div class="Header-nav-inner">
-                    <a class="Header-nav-item Header-nav-item--active" href="#">HOME</a>
+                    <a class="Header-nav-item Header-nav-item--active" href="./index.html">HOME</a>
                     <a class="Header-nav-item" href="#">RESERVE</a>
                     <span class="Header-nav-item Header-nav-item--folder" >
-                        <a href="#">ROOMS</a>
+                        <a href="./allRooms.html">ROOMS</a>
                         <span class="Header-nav-folder">
-                                <a href="#" class="Header-nav-folder-item">ALL</a>
-                                <a href="#" class="Header-nav-folder-item">CATACOMBS</a>
-                                <a href="#" class="Header-nav-folder-item">THE SIXER</a>
-                                <a href="#" class="Header-nav-folder-item">EL CUATRO</a>
-                                <a href="#" class="Header-nav-folder-item">SUPER QUEEN</a>
-                                <a href="#" class="Header-nav-folder-item">KING LODGE</a>
-                                <a href="#" class="Header-nav-folder-item">HOT TUB SUITE</a>
-                                <a href="#" class="Header-nav-folder-item">SUPER SUITE</a>
-                                <a href="#" class="Header-nav-folder-item">GEAR ROOM</a>
+                                <a href="./allRooms.html" class="Header-nav-folder-item">ALL</a>
+                                <a href="./rooms/catacombs.html" class="Header-nav-folder-item">CATACOMBS</a>
+                                <a href="./rooms/catacombs.html" class="Header-nav-folder-item">THE SIXER</a>
+                                <a href="./rooms/catacombs.html" class="Header-nav-folder-item">EL CUATRO</a>
+                                <a href="./rooms/catacombs.html" class="Header-nav-folder-item">SUPER QUEEN</a>
+                                <a href="./rooms/catacombs.html" class="Header-nav-folder-item">KING LODGE</a>
+                                <a href="./rooms/catacombs.html" class="Header-nav-folder-item">HOT TUB SUITE</a>
+                                <a href="./rooms/catacombs.html" class="Header-nav-folder-item">SUPER SUITE</a>
+                                <a href="./rooms/catacombs.html" class="Header-nav-folder-item">GEAR ROOM</a>
                         </span>
                     </span>
                     <span class="Header-nav-item Header-nav-item--folder" >
-                        <a href="#">ADVENTURES</a>
+                        <a href="./allAdventures.html">ADVENTURES</a>
                         <span class="Header-nav-folder">    
-                                <a href="#" class="Header-nav-folder-item">ALL</a>
-                                <a href="#" class="Header-nav-folder-item">SKIING &amp; SNOWBOARDING</a>
-                                <a href="#" class="Header-nav-folder-item">ROCK CLIMBING</a>
-                                <a href="#" class="Header-nav-folder-item">HIKING</a>
-                                <a href="#" class="Header-nav-folder-item">KAYAKING</a>
-                                <a href="#" class="Header-nav-folder-item">BIKING</a>
-                                <a href="#" class="Header-nav-folder-item">ICE CLIMBING</a>
-                                <a href="#" class="Header-nav-folder-item">FLY FISHING</a>
-                                <a href="#" class="Header-nav-folder-item">SAILING</a>
-                                <a href="#" class="Header-nav-folder-item">TOURING</a>
-                                <a href="#" class="Header-nav-folder-item">STANDUP PADDLE BOARDING</a>
-                                <a href="#" class="Header-nav-folder-item">DOG SLEDDING</a>
-                                <a href="#" class="Header-nav-folder-item">YOGA</a>
-                                <a href="#" class="Header-nav-folder-item">SNOWMOBILING</a>
-                                <a href="#" class="Header-nav-folder-item">RAFTING</a>
-                                <a href="#" class="Header-nav-folder-item">GOLF</a>
+                                <a href="./allAdventures.html" class="Header-nav-folder-item">ALL</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">SKIING &amp; SNOWBOARDING</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">ROCK CLIMBING</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">HIKING</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">KAYAKING</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">BIKING</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">ICE CLIMBING</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">FLY FISHING</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">SAILING</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">TOURING</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">STANDUP PADDLE BOARDING</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">DOG SLEDDING</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">YOGA</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">SNOWMOBILING</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">RAFTING</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">GOLF</a>
                         </span>
                     </span>
                     <a class="Header-nav-item" href="#">GALERY</a>
@@ -111,7 +96,7 @@
                     <div class="rooms-card-text">
                         <p class="rooms-card-p">4 person | shared or private</p>
                         <p class="rooms-card-title">CATACOMBS</p>
-                        <button>view profile</button>
+                        <a href="./rooms/catacombs.html">view profile</a>
                     </div>
                 </div>
             </div>
@@ -121,7 +106,7 @@
                     <div class="rooms-card-text">
                         <p class="rooms-card-p">6 person | shared or private</p>
                         <p class="rooms-card-title">THE SIXER</p>
-                        <button>view profile</button>
+                        <a href="./rooms/catacombs.html">view profile</a>
                     </div>
                 </div>
             </div>
@@ -131,7 +116,7 @@
                     <div class="rooms-card-text">
                         <p class="rooms-card-p">4 person | shared or private</p>
                         <p class="rooms-card-title">EL CUATRO</p>
-                        <button>view profile</button>
+                        <a href="./rooms/catacombs.html">view profile</a>
                     </div>
                 </div>
             </div>
@@ -141,7 +126,7 @@
                     <div class="rooms-card-text">
                         <p class="rooms-card-p">3 person | private</p>
                         <p class="rooms-card-title">SUPER QUEEN</p>
-                        <button>view profile</button>
+                        <a href="./rooms/catacombs.html">view profile</a>
                     </div>
                 </div>
             </div>
@@ -151,7 +136,7 @@
                     <div class="rooms-card-text">
                         <p class="rooms-card-p">2 person | private</p>
                         <p class="rooms-card-title">KING LODGE</p>
-                        <button>view profile</button>
+                        <a href="./rooms/catacombs.html">view profile</a>
                     </div>
                 </div>
             </div>
@@ -161,7 +146,7 @@
                     <div class="rooms-card-text">
                         <p class="rooms-card-p">2 person | private</p>
                         <p class="rooms-card-title">HOT TUB SUITE</p>
-                        <button>view profile</button>
+                        <a href="./rooms/catacombs.html">view profile</a>
                     </div>
                 </div>
             </div>
@@ -171,7 +156,7 @@
                     <div class="rooms-card-text">
                         <p class="rooms-card-p">2 person | private</p>
                         <p class="rooms-card-title">SUPER SUITE</p>
-                        <button>view profile</button>
+                        <a href="./rooms/catacombs.html">view profile</a>
                     </div>
                 </div>
             </div>
@@ -181,7 +166,7 @@
                     <div class="rooms-card-text">
                         <p class="rooms-card-p">skis | boards | bikes | boots</p>
                         <p class="rooms-card-title">GEAR ROOM</p>
-                        <button>view profile</button>
+                        <a href="./rooms/catacombs.html">view profile</a>
                     </div>
                 </div>
             </div>

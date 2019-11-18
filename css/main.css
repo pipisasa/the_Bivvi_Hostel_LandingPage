@@ -21,17 +21,39 @@ a {
     flex-direction: column;
     z-index: 1000;
 }
-.anchorBar a {
+.anchorBar div {
+    position: relative;
+    padding: 1rem;
+    margin: 4px;
+}
+.anchorBar div a{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
     padding: 10px;
     border: 1px solid;
     color: white;
     border-radius: 100px;
-    margin: 4px;
     transition: 0.1s;
     box-shadow: inset 0 0 0 1px #00000063;
+    transition: .2s;
 }
-.anchorBar a:hover{
+.anchorBar div a:hover{
     padding: 15px;
+}
+.anchorBar div a::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    transition: .2s;
+}
+.anchorBar div a:hover::before{
+    padding: 4px;
+    border-radius: 100px;
+    background: black;
 }
 .Header{
     font-family: Heebo;
@@ -229,7 +251,7 @@ p.rooms-card-title {
     background-color: #0000004d;
 }
 
-.rooms-card button {
+.rooms-card a {
     cursor: pointer;
     transition: 0.3s;
     font-family: Heebo;
@@ -246,7 +268,7 @@ p.rooms-card-title {
     padding: 2% 9%;
 }
 
-.rooms-card button:hover{
+.rooms-card a:hover{
     color: black;
     background: white;
 }
