@@ -4,26 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
-    <link rel="stylesheet" href="./css/map.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
     <link rel="stylesheet" href="./css/Fonts/fonts.css">
+    <link rel="stylesheet" href="./css/gettingHere.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/media.css">
     <title>The Bivvi Hostel | Breckenrodge, CO</title>
 </head>
 <body>
     <div class="anchorBar" id="anchorBar">
-            <div><a href="#Welcome"><span>Welcome</span></a></div>
-            <div><a href="#Rooms"><span>Rooms</span></a></div>
-            <div><a href="#NewsLettrer"><span>NewsLettrer</span></a></div>
-            <div><a href="#Bivouac"><span>Bivouac</span></a></div>
-            <div><a href="#Instagram"><span>Instagram</span></a></div>
-            <div><a href="#Contact"><span>Contact</span></a></div>
-            <div><a href="#Bottom"><span>Bottom</span></a></div>
+            <div><a href="#Top"></a></div>
+            <div><a href="#Bottom"></a></div>
     </div>
-
+    
     <header class="Header">
         <div class="top-left">
             <a class="Logo" href="./index.html">
@@ -132,205 +125,31 @@
             </nav>
         </div>
     </header>
-
-    <div class="Welcome section">
-        <a id="Welcome" name="Welcome"></a>
-        <img id="Welcome-logo" src="./img/Logo_White_Medium_2.png" alt="Logo_White_Medium_2.png">
-        <button class="Welcome--BookNowBtn">Book Now</button>
-    </div>
-
-    <div class="rooms section">
-        <a id="Rooms" name="Rooms"></a>
-        <div class="rooms-title">
-            <h1>OUR ROOMS</h1>
-        </div>
-        <div class="rooms-body">
-            <div class="rooms-card">
-                <div class="rooms-card-container">
-                    <img class="rooms-card-img" src="./img/Catacombs.jpg" alt="cardImg">
-                    <div class="rooms-card-text">
-                        <p class="rooms-card-p">4 person | shared or private</p>
-                        <p class="rooms-card-title">CATACOMBS</p>
-                        <a href="./rooms/catacombs.html">view profile</a>
-                    </div>
-                </div>
-            </div>
-            <div class="rooms-card">
-                <div class="rooms-card-container">
-                    <img class="rooms-card-img" src="./img/SixerDorm.jpg" alt="cardImg">
-                    <div class="rooms-card-text">
-                        <p class="rooms-card-p">6 person | shared or private</p>
-                        <p class="rooms-card-title">THE SIXER</p>
-                        <a href="./rooms/catacombs.html">view profile</a>
-                    </div>
-                </div>
-            </div>
-            <div class="rooms-card">
-                <div class="rooms-card-container">
-                    <img class="rooms-card-img" src="./img/Quatro1small.jpg" alt="cardImg">
-                    <div class="rooms-card-text">
-                        <p class="rooms-card-p">4 person | shared or private</p>
-                        <p class="rooms-card-title">EL CUATRO</p>
-                        <a href="./rooms/catacombs.html">view profile</a>
-                    </div>
-                </div>
-            </div>
-            <div class="rooms-card">
-                <div class="rooms-card-container">
-                    <img class="rooms-card-img" src="./img/SuperQueen.jpg" alt="cardImg">
-                    <div class="rooms-card-text">
-                        <p class="rooms-card-p">3 person | private</p>
-                        <p class="rooms-card-title">SUPER QUEEN</p>
-                        <a href="./rooms/catacombs.html">view profile</a>
-                    </div>
-                </div>
-            </div>
-            <div class="rooms-card">
-                <div class="rooms-card-container">
-                    <img class="rooms-card-img" src="./img/kingLodge.jpeg" alt="cardImg">
-                    <div class="rooms-card-text">
-                        <p class="rooms-card-p">2 person | private</p>
-                        <p class="rooms-card-title">KING LODGE</p>
-                        <a href="./rooms/catacombs.html">view profile</a>
-                    </div>
-                </div>
-            </div>
-            <div class="rooms-card">
-                <div class="rooms-card-container">
-                    <img class="rooms-card-img" src="./img/HotTubSuite.jpg" alt="cardImg">
-                    <div class="rooms-card-text">
-                        <p class="rooms-card-p">2 person | private</p>
-                        <p class="rooms-card-title">HOT TUB SUITE</p>
-                        <a href="./rooms/catacombs.html">view profile</a>
-                    </div>
-                </div>
-            </div>
-            <div class="rooms-card">
-                <div class="rooms-card-container">
-                    <img class="rooms-card-img" src="./img/SuperSuite.jpg" alt="cardImg">
-                    <div class="rooms-card-text">
-                        <p class="rooms-card-p">2 person | private</p>
-                        <p class="rooms-card-title">SUPER SUITE</p>
-                        <a href="./rooms/catacombs.html">view profile</a>
-                    </div>
-                </div>
-            </div>
-            <div class="rooms-card">
-                <div class="rooms-card-container">
-                    <img class="rooms-card-img" src="./img/GearRoom.jpg" alt="cardImg">
-                    <div class="rooms-card-text">
-                        <p class="rooms-card-p">skis | boards | bikes | boots</p>
-                        <p class="rooms-card-title">GEAR ROOM</p>
-                        <a href="./rooms/catacombs.html">view profile</a>
-                    </div>
-                </div>
-            </div>
-            <div class="rooms--form">
-                <a id="NewsLettrer" name="NewsLettrer"></a>
-                <h2 class="rooms-form-title">Join the club</h2>
-                <p class="rooms-form-p">Sign up now with your email address to receive the latest Bivvi news and updates!</p>
-                <form class="rooms-form">
-                    <input class="rooms-form-input" placeholder="Email Address" name="email">
-                    <input class="rooms-form-btn" type="submit" value="sign up">
-                </form>
-                <p class="rooms-form-subtitle">We respect your privacy.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="the-bivvouac">
-        <a id="Bivouac" name="Bivouac"></a>
-        <div class="the-bivvouac-desc">
-            <h3>“AN IMPROVISED ENCAMPMENT CONSTRUCTED OF NATURAL MATERIALS SUCH AS THOSE USED IN SCOUTING AND MOUNTAINEERING.”</h3>
-            <p>— BIVO͞OˌAK/</p>
-        </div>
-    </div>
-
-    <div class="instagram">
-        <a id="Instagram" name="Instagram"></a>
-        <div class="instagram-title">
-            <h3>@THEBIVVIHOSTEL</h3>
-        </div>
-        <div class="instagram-body">
-                <div class="instagram-img-container">
-                    <img class="instagram-img" src="./img/instagram/image-asset.jpeg">
-                </div>
-                <div class="instagram-img-container">
-                    <img class="instagram-img" src="./img/instagram/image-asset (1).jpeg">
-                </div>
-                <div class="instagram-img-container">
-                    <img class="instagram-img" src="./img/instagram/image-asset (2).jpeg">
-                </div>
-                <div class="instagram-img-container">
-                    <img class="instagram-img" src="./img/instagram/image-asset (3).jpeg">
-                </div>
-                <div class="instagram-img-container">
-                    <img class="instagram-img" src="./img/instagram/image-asset (4).jpeg">
-                </div>
-                <div class="instagram-img-container">
-                    <img class="instagram-img" src="./img/instagram/image-asset (5).jpeg">
-                </div>
-                <div class="instagram-img-container">
-                    <img class="instagram-img" src="./img/instagram/image-asset (6).jpeg">
-                </div>
-                <div class="instagram-img-container">
-                    <img class="instagram-img" src="./img/instagram/image-asset (7).jpeg">
-                </div>
-                <div class="instagram-img-container">
-                    <img class="instagram-img" src="./img/instagram/image-asset (8).jpeg">
-                </div>
-                <div class="instagram-img-container">
-                    <img class="instagram-img" src="./img/instagram/image-asset (9).jpeg">
-                </div>
-        </div>
-    </div>
-
-    <div class="contactUs">
-        <a id="Contact" name="Contact"></a>
-        <h2 class="contactUs-title">CONTACT US</h2>
-        <div class="contactUs-body">
-            <div class="contactUs-left">
-                <p class="contactUs-left-desc">
-                    We'd really love to hear from you so drop us a message and we'll get back to you as soon as we can.<br/>
-                    Want to talk to a Bivvi staff member? Call: 
-                    <a href="tel:+996700000000">+996700000000</a>
-                </p>
-                <form class="contactUs-form">
-                    <p class="contactUs-form-input-title">Name *</p>
-                    <div class="contactUs-form-top">
-                        <div class="contactUs-form-name-input">
-                            <input class="contactUs-form-input" name="FirstName">
-                            <p>First Name</p>
-                        </div>
-                        
-                        <div class="contactUs-form-name-input">
-                            <input class="contactUs-form-input" name="LastName">
-                            <p>Last Name</p>
-                        </div>
-                    </div>
-
-                    <p class="contactUs-form-input-title">Email Address *</p>
-                    <input class="contactUs-form-input" name="email">
-
-                    <p class="contactUs-form-input-title">Subject *</p>
-                    <input class="contactUs-form-input" name="subject">
-                    
-                    <p class="contactUs-form-input-title">Message *</p>
-                    <textarea class="contactUs-form-input-text" type="text"></textarea>
-                </form>
-            </div>
-            
-            <div class="contactUs-right">
-                <h3 class="map-title">THE BIVVI HOSTEL</h3>
-                <a class="map-link" href="https://go.2gis.com/by7vd">​
-                    9511 Colorado 9,<br>
-                    Breckenridge, CO, 80424, USA
-                </a>
-                <div id="map"></div>
-            </div>
-        </div>
-    </div>
     
+<!-- /////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="gettingHere">
+        <a name="all" id="all"></a>
+        <h1>getting Here</h1>
+        <h3 class="gettingHere-address">
+            <a class="map-link" href="https://go.2gis.com/by7vd">​
+                9511 Colorado 9,<br>
+                Breckenridge, CO, 80424, USA
+            </a>
+        </h3>
+        <div class="gettingHere-container">
+            <div class="gettingHere-desc">
+                <h3>Door-to-Door Shuttle</h3><p><strong><a target="_blank" href="https://freshtrackstransportation.zaui.net/modules/webBooking/index.php?action=Details&amp;id=55&amp;vendorId=439&amp;promoCode=tb">Click Here</a>&nbsp;</strong>to reserve your spot and receive 10% off shuttle rides with <strong><a target="_blank" href="https://freshtrackstransportation.zaui.net/modules/webBooking/index.php?action=Details&amp;id=55&amp;vendorId=439&amp;promoCode=tb">Fresh Tracks Transportation</a></strong></p><p>Fresh Tracks Transportation provides shuttle service between the Denver International Airport and Breckenridge, Colorado. With their service, getting airport shuttles to Breckenridge has never been easier. They offer a daily schedule through the entire winter season offering multiple Breckenridge to Denver shuttle times. No matter when your flight lands or departs the Denver International Airport, they will have a shuttle time that suits your Denver to Breckenridge needs. Shuttle service from Breckenridge to Denver takes approximately 1 hour and 45 minutes.</p>
+            </div>
+            <div class="gettingHere-desc">
+                <h3>Door-to-Door Shuttle</h3><p><strong><a target="_blank" href="https://freshtrackstransportation.zaui.net/modules/webBooking/index.php?action=Details&amp;id=55&amp;vendorId=439&amp;promoCode=tb">Click Here</a>&nbsp;</strong>to reserve your spot and receive 10% off shuttle rides with <strong><a target="_blank" href="https://freshtrackstransportation.zaui.net/modules/webBooking/index.php?action=Details&amp;id=55&amp;vendorId=439&amp;promoCode=tb">Fresh Tracks Transportation</a></strong></p><p>Fresh Tracks Transportation provides shuttle service between the Denver International Airport and Breckenridge, Colorado. With their service, getting airport shuttles to Breckenridge has never been easier. They offer a daily schedule through the entire winter season offering multiple Breckenridge to Denver shuttle times. No matter when your flight lands or departs the Denver International Airport, they will have a shuttle time that suits your Denver to Breckenridge needs. Shuttle service from Breckenridge to Denver takes approximately 1 hour and 45 minutes.</p>
+            </div>
+            <div class="gettingHere-desc">
+                <h3>Local Bus</h3><p>Already in the area? Summit County offers free bus transportation all over the county! The <strong><a target="_blank" href="http://www.co.summit.co.us/index.aspx?NID=915">Summit Stage</a></strong>&nbsp;will take you to and from Breckenridge, Frisco, Silverthorne, Dillon, Keystone and A-basin.&nbsp;<strong><a target="_blank" href="http://www.co.summit.co.us/index.aspx?NID=915">Click Here</a></strong>&nbsp;to view Summit Stage routes and schedule.</p><p>The <strong><a target="_blank" href="http://www.breckfreeride.com/">Breckenridge Free Ride</a></strong>&nbsp;offers routes all around the town of Breck. The Bivvi is located along the <a target="_blank" href="https://www.breckfreeride.com/routes-schedules/system-map">Grey-&nbsp;Southside Route</a>&nbsp;in the summer months and the <a target="_blank" href="https://www.breckfreeride.com/routes-schedules/system-map">Brown Route</a> in the winter months. Simply ask your driver to take you to The Bivvi.&nbsp;<strong><a target="_blank" href="http://www.breckfreeride.com/">Click Here</a></strong>&nbsp;to view FreeRide routes and schedule.</p>
+            </div>
+            <div id="map"></div>
+        </div>
+    </div>
+
     <footer class="footer">
         <a id="Bottom" name="Bottom"></a>
         <div class="footer-container">

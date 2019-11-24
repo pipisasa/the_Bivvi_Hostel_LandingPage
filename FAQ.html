@@ -18,21 +18,34 @@
     </div>
     
     <header class="Header">
-        <a name="Top" id="Top"></a>
-        <div class="top-left">
-            <a class="Logo" href="./index.html">
-                <img src="./img/BlogoTransparent1.png">
-            </a>
-        </div>
-        <div class="top-center"></div>
-        <div class="top-right">
-            <nav class="Header-nav">
-                <div class="Header-nav-inner">
-                    <a class="Header-nav-item" href="./index.html">HOME</a>
-                    <a class="Header-nav-item" href="#">RESERVE</a>
-                    <span class="Header-nav-item Header-nav-item--folder" >
-                        <a href="./allRooms.html">ROOMS</a>
-                        <span class="Header-nav-folder">
+            <div class="top-left">
+                <a class="Logo" href="./index.html">
+                    <img src="./img/BlogoTransparent1.png">
+                </a>
+            </div>
+            <div class="top-center"></div>
+            <div class="top-right">
+                <nav class="Header-nav">
+                    <button id="Header-hamburger" class="Header-hamburger">
+                        <img src="./img/icons/list.png" alt="hamburger">
+                        <div class="mb-menu hidden" id="mb-menu">
+                            <div class="Header-nav-inner">
+                                <a class="Header-nav-item Header-nav-item--active" href="./index.html">HOME</a>
+                                <a class="Header-nav-item" href="./reserve.html">RESERVE</a>
+                                <span class="Header-nav-item Header-nav-item--folder Header-nav-item--folder-rooms" >
+                                    ROOMS
+                                </span>
+                                <span class="Header-nav-item Header-nav-item--folder Header-nav-item--folder-adventures" >
+                                    ADVENTURES
+                                </span>
+                                <a class="Header-nav-item" href="./gallery.html">GALERY</a>
+                                <a class="Header-nav-item" href="./food-drink.html">FOOD & DRUNK</a>
+                                <a class="Header-nav-item" href="./gettingHere.html">GETTING HERE</a>
+                                <a class="Header-nav-item" href="./FAQ.html">FAQ</a>
+                                <a class="Header-nav-item" href="./contact.html">CONTACT</a>
+                            </div>
+                            <span class="mb-Header-nav-folder hidden" id="mb-menu-rooms">
+                                <span class="mb-Header-nav-folder-bck Header-nav-folder-item">Back</span>
                                 <a href="./allRooms.html" class="Header-nav-folder-item">ALL</a>
                                 <a href="./rooms/catacombs.html" class="Header-nav-folder-item">CATACOMBS</a>
                                 <a href="./rooms/catacombs.html" class="Header-nav-folder-item">THE SIXER</a>
@@ -42,11 +55,9 @@
                                 <a href="./rooms/catacombs.html" class="Header-nav-folder-item">HOT TUB SUITE</a>
                                 <a href="./rooms/catacombs.html" class="Header-nav-folder-item">SUPER SUITE</a>
                                 <a href="./rooms/catacombs.html" class="Header-nav-folder-item">GEAR ROOM</a>
-                        </span>
-                    </span>
-                    <span class="Header-nav-item Header-nav-item--folder" >
-                        <a href="./allAdventures.html">ADVENTURES</a>
-                        <span class="Header-nav-folder">    
+                            </span>
+                            <span class="mb-Header-nav-folder hidden" id="mb-menu-adventures">
+                                <span class="mb-Header-nav-folder-bck Header-nav-folder-item">Back</span>    
                                 <a href="./allAdventures.html" class="Header-nav-folder-item">ALL</a>
                                 <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">SKIING &amp; SNOWBOARDING</a>
                                 <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">ROCK CLIMBING</a>
@@ -63,17 +74,57 @@
                                 <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">SNOWMOBILING</a>
                                 <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">RAFTING</a>
                                 <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">GOLF</a>
+                            </span>
+                            <div class="close-mb-menu"></div>
+                        </div>
+                    </button>
+                    <div class="Header-nav-inner">
+                        <a class="Header-nav-item Header-nav-item--active" href="./index.html">HOME</a>
+                        <a class="Header-nav-item" href="./reserve.html">RESERVE</a>
+                        <span class="Header-nav-item Header-nav-item--folder" >
+                            <a href="./allRooms.html">ROOMS</a>
+                            <span class="Header-nav-folder">
+                                    <a href="./allRooms.html" class="Header-nav-folder-item">ALL</a>
+                                    <a href="./rooms/catacombs.html" class="Header-nav-folder-item">CATACOMBS</a>
+                                    <a href="./rooms/catacombs.html" class="Header-nav-folder-item">THE SIXER</a>
+                                    <a href="./rooms/catacombs.html" class="Header-nav-folder-item">EL CUATRO</a>
+                                    <a href="./rooms/catacombs.html" class="Header-nav-folder-item">SUPER QUEEN</a>
+                                    <a href="./rooms/catacombs.html" class="Header-nav-folder-item">KING LODGE</a>
+                                    <a href="./rooms/catacombs.html" class="Header-nav-folder-item">HOT TUB SUITE</a>
+                                    <a href="./rooms/catacombs.html" class="Header-nav-folder-item">SUPER SUITE</a>
+                                    <a href="./rooms/catacombs.html" class="Header-nav-folder-item">GEAR ROOM</a>
+                            </span>
                         </span>
-                    </span>
-                    <a class="Header-nav-item" href="#">GALERY</a>
-                    <a class="Header-nav-item" href="#">FOOD & DRUNK</a>
-                    <a class="Header-nav-item" href="#">GETTING HERE</a>
-                    <a class="Header-nav-item Header-nav-item--active" href="#">FAQ</a>
-                    <a class="Header-nav-item" href="#">CONTACT</a>
-                </div>
-            </nav>
-        </div>
-    </header>
+                        <span class="Header-nav-item Header-nav-item--folder" >
+                            <a href="./allAdventures.html">ADVENTURES</a>
+                            <span class="Header-nav-folder">    
+                                <a href="./allAdventures.html" class="Header-nav-folder-item">ALL</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">SKIING &amp; SNOWBOARDING</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">ROCK CLIMBING</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">HIKING</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">KAYAKING</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">BIKING</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">ICE CLIMBING</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">FLY FISHING</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">SAILING</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">TOURING</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">STANDUP PADDLE BOARDING</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">DOG SLEDDING</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">YOGA</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">SNOWMOBILING</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">RAFTING</a>
+                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">GOLF</a>
+                            </span>
+                        </span>
+                        <a class="Header-nav-item" href="./gallery.html">GALERY</a>
+                        <a class="Header-nav-item" href="./food-drink.html">FOOD & DRUNK</a>
+                        <a class="Header-nav-item" href="./gettingHere.html">GETTING HERE</a>
+                        <a class="Header-nav-item" href="./FAQ.html">FAQ</a>
+                        <a class="Header-nav-item" href="./contact.html">CONTACT</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
     
 <!-- /////////////////////////////////////////////////////////////////////////////////// -->
     <div class="FAQ">
@@ -176,7 +227,7 @@
         <a id="Bottom" name="Bottom"></a>
         <div class="footer-container">
             <div class="footer-left">
-                <h2>THE BIVVI HOSTEL</h2>
+                <h3>THE BIVVI HOSTEL</h3>
                 <span>
                     <a href="https://goo.gl/maps/T6SWT9a39CL2" target="_blank">9511 Colorado 9,<br>Breckenridge, CO, 80424, USA</a><br/>
                     email: <a href="mailto:info@thebivvi.com" id="yui_3_17_2_1_1573883573849_962">info@thebivvi.com</a><br/>

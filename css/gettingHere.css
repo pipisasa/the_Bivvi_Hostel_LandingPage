@@ -1,0 +1,53 @@
+.gettingHere {
+    padding: 1rem 3rem;
+}
+.gettingHere h1 {
+    text-align: center;
+    color: #242424;
+    font-family: trump-gothic-pro;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 160px;
+    letter-spacing: 0.1em;
+    line-height: 1.1em;
+    text-transform: uppercase;
+    margin: 0;
+    box-shadow: 0px 1px 0 0px rgba(66,66,66,.65);
+}
+.gettingHere-desc{
+    max-width: 30vw;
+}
+.gettingHere-address{
+    text-align: center;
+}
+.gettingHere h3{
+    font-family: Heebo;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: .11em;
+    line-height: 1.8em;
+    text-transform: uppercase;
+}
+.gettingHere-desc p{
+    font-family: Heebo-light;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 11px;
+    letter-spacing: .07em;
+    line-height: 2em;
+    text-transform: none;
+    color: rgba(66,66,66,.65);
+}
+.gettingHere-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.gettingHere-desc--left, .gettingHere-desc--right{
+    width: 25vw;
+}
+.gettingHere #map {
+    width: 90vw;
+    height: 50vw;
+}
