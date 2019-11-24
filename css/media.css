@@ -1,0 +1,41 @@
+@media  screen and (max-width:1120px){
+    .instagram-body{
+        height: 440px;
+    }
+}
+@media screen and (max-width:890px){
+    .instagram-body{
+        height: 660px;
+    }
+}
+@media screen and (max-width:677px){
+    .instagram-body{
+        height: max-content;
+    }
+}
+@media screen and (max-width:1090px){
+    .Logo {
+        padding: 12px 6px;
+    }    
+    .Header-nav{
+        padding: 9px 9px;    
+        font-size: 8px;
+    }
+}
+@media screen and (max-width:840px){
+    .top-center, .Header-nav-inner{
+        display: none;
+    }
+    .mb-menu .Header-nav-inner{
+        display: flex;
+    }
+    .Header-nav{
+        padding: 0;
+    }
+    .Header-hamburger{
+        display: inline-block;
+    }
+    .Logo img {
+        width: 50px;
+    }
+}

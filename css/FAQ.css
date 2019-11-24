@@ -1,0 +1,35 @@
+.FAQ {
+    padding: 1rem 3rem;
+}
+.FAQ h1 {
+    text-align: center;
+    color: #242424;
+    font-family: trump-gothic-pro;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 160px;
+    letter-spacing: 0.1em;
+    line-height: 1.1em;
+    text-transform: uppercase;
+    margin: 0;
+    box-shadow: 0px 1px 0 0px rgba(66,66,66,.65);
+}
+.FAQ h3{
+    font-family: Heebo;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: .11em;
+    line-height: 1.8em;
+    text-transform: uppercase;
+}
+.FAQ p{
+    font-family: Heebo-light;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 11px;
+    letter-spacing: .07em;
+    line-height: 2em;
+    text-transform: none;
+    color: rgba(66,66,66,.65);
+}

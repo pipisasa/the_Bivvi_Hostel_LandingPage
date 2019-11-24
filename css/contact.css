@@ -1,0 +1,101 @@
+.contactPage {
+    padding: 1rem 3rem;
+    color: rgba(66,66,66,.65);
+    font-family: Heebo-light;
+}
+.contactPage h1 {
+    text-align: center;
+    color: #242424;
+    font-family: trump-gothic-pro;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 160px;
+    letter-spacing: 0.1em;
+    line-height: 1.1em;
+    text-transform: uppercase;
+    margin: 0;
+    box-shadow: 0px 1px 0 0px rgba(66,66,66,.65);
+}
+
+.contactPage-title {
+    font-family: "Trump-Gothic-Pro";
+    letter-spacing: 0.1em;
+    font-size: 10rem;
+    margin: 2rem 0 2rem 0;
+}
+.contactPage-body{
+    color: rgba(66,66,66,.65);
+    font-family: Heebo-light;
+    display: flex;
+}
+.contactPage-form-top {
+    display: flex;
+    justify-content: space-between;
+}
+.contactPage-form-name-input {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2px;
+    width: 100%;
+}
+.contactPage-desc {
+    padding: 0;
+    margin: 2rem 0 0 0;
+    font-family: Heebo;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: .11em;
+    line-height: 1.8em;
+    text-transform: uppercase;
+    color: black;
+}
+.contactPage-number{
+    font-family: Heebo;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 11px;
+    letter-spacing: .07em;
+    line-height: 2em;
+    text-transform: none;
+    color: rgba(66,66,66,.65);
+}
+.contactPage-number a {
+    text-decoration: underline;
+}
+.contactPage-number a:hover {
+    color: black;
+}
+.contactPage-form-input-title {
+    margin: 26px 0 0 0;
+}
+.contactPage-form-name-input p {
+    margin: 0;
+}
+.contactPage-form-input{
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0 4px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    color: #000;
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: normal;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+.contactPage-form-input-text{
+    width: 100% !important;
+    min-height: 85px !important;
+    padding: 12px;
+    margin: 6px 0 4px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    color: #000;
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: normal;
+    box-sizing: border-box;
+    border-radius: 2px;
+}

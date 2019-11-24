@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
     <link rel="stylesheet" href="./css/Fonts/fonts.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/map.css">
     <title>The Bivvi Hostel | Breckenrodge, CO</title>
 </head>
 <body>
     <div class="anchorBar" id="anchorBar">
-            <div><a href="#Welcome"></a></div>
-            <div><a href="#Rooms"></a></div>
-            <div><a href="#NewsLettrer"></a></div>
-            <div><a href="#Bivouac"></a></div>
-            <div><a href="#Instagram"></a></div>
-            <div><a href="#Contact"></a></div>
-            <div><a href="#Bottom"></a></div>
+            <div><a href="#Welcome"><span>Welcome</span></a></div>
+            <div><a href="#Rooms"><span>Rooms</span></a></div>
+            <div><a href="#NewsLettrer"><span>NewsLettrer</span></a></div>
+            <div><a href="#Bivouac"><span>Bivouac</span></a></div>
+            <div><a href="#Instagram"><span>Instagram</span></a></div>
+            <div><a href="#Contact"><span>Contact</span></a></div>
+            <div><a href="#Bottom"><span>Bottom</span></a></div>
     </div>
 
     <header class="Header">
@@ -30,6 +33,58 @@
         <div class="top-center"></div>
         <div class="top-right">
             <nav class="Header-nav">
+                <button id="Header-hamburger" class="Header-hamburger">
+                    <img src="./img/icons/list.png" alt="hamburger">
+                    <div class="mb-menu hidden" id="mb-menu">
+                        <div class="Header-nav-inner">
+                            <a class="Header-nav-item Header-nav-item--active" href="./index.html">HOME</a>
+                            <a class="Header-nav-item" href="#">RESERVE</a>
+                            <span class="Header-nav-item Header-nav-item--folder Header-nav-item--folder-rooms" >
+                                ROOMS
+                            </span>
+                            <span class="Header-nav-item Header-nav-item--folder Header-nav-item--folder-adventures" >
+                                ADVENTURES
+                            </span>
+                            <a class="Header-nav-item" href="#">GALERY</a>
+                            <a class="Header-nav-item" href="#">FOOD & DRUNK</a>
+                            <a class="Header-nav-item" href="#">GETTING HERE</a>
+                            <a class="Header-nav-item" href="#">FAQ</a>
+                            <a class="Header-nav-item" href="#">CONTACT</a>
+                        </div>
+                        <span class="mb-Header-nav-folder hidden" id="mb-menu-rooms">
+                            <span class="mb-Header-nav-folder-bck Header-nav-folder-item">Back</span>
+                            <a href="./allRooms.html" class="Header-nav-folder-item">ALL</a>
+                            <a href="./rooms/catacombs.html" class="Header-nav-folder-item">CATACOMBS</a>
+                            <a href="./rooms/catacombs.html" class="Header-nav-folder-item">THE SIXER</a>
+                            <a href="./rooms/catacombs.html" class="Header-nav-folder-item">EL CUATRO</a>
+                            <a href="./rooms/catacombs.html" class="Header-nav-folder-item">SUPER QUEEN</a>
+                            <a href="./rooms/catacombs.html" class="Header-nav-folder-item">KING LODGE</a>
+                            <a href="./rooms/catacombs.html" class="Header-nav-folder-item">HOT TUB SUITE</a>
+                            <a href="./rooms/catacombs.html" class="Header-nav-folder-item">SUPER SUITE</a>
+                            <a href="./rooms/catacombs.html" class="Header-nav-folder-item">GEAR ROOM</a>
+                        </span>
+                        <span class="mb-Header-nav-folder hidden" id="mb-menu-adventures">
+                            <span class="mb-Header-nav-folder-bck Header-nav-folder-item">Back</span>    
+                            <a href="./allAdventures.html" class="Header-nav-folder-item">ALL</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">SKIING &amp; SNOWBOARDING</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">ROCK CLIMBING</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">HIKING</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">KAYAKING</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">BIKING</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">ICE CLIMBING</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">FLY FISHING</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">SAILING</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">TOURING</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">STANDUP PADDLE BOARDING</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">DOG SLEDDING</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">YOGA</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">SNOWMOBILING</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">RAFTING</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">GOLF</a>
+                        </span>
+                        <div class="close-mb-menu"></div>
+                    </div>
+                </button>
                 <div class="Header-nav-inner">
                     <a class="Header-nav-item Header-nav-item--active" href="./index.html">HOME</a>
                     <a class="Header-nav-item" href="#">RESERVE</a>
@@ -50,22 +105,22 @@
                     <span class="Header-nav-item Header-nav-item--folder" >
                         <a href="./allAdventures.html">ADVENTURES</a>
                         <span class="Header-nav-folder">    
-                                <a href="./allAdventures.html" class="Header-nav-folder-item">ALL</a>
-                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">SKIING &amp; SNOWBOARDING</a>
-                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">ROCK CLIMBING</a>
-                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">HIKING</a>
-                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">KAYAKING</a>
-                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">BIKING</a>
-                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">ICE CLIMBING</a>
-                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">FLY FISHING</a>
-                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">SAILING</a>
-                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">TOURING</a>
-                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">STANDUP PADDLE BOARDING</a>
-                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">DOG SLEDDING</a>
-                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">YOGA</a>
-                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">SNOWMOBILING</a>
-                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">RAFTING</a>
-                                <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">GOLF</a>
+                            <a href="./allAdventures.html" class="Header-nav-folder-item">ALL</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">SKIING &amp; SNOWBOARDING</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">ROCK CLIMBING</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">HIKING</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">KAYAKING</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">BIKING</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">ICE CLIMBING</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">FLY FISHING</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">SAILING</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">TOURING</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">STANDUP PADDLE BOARDING</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">DOG SLEDDING</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">YOGA</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">SNOWMOBILING</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">RAFTING</a>
+                            <a href="./adventures/skiing-snowboarding.html" class="Header-nav-folder-item">GOLF</a>
                         </span>
                     </span>
                     <a class="Header-nav-item" href="#">GALERY</a>
@@ -196,17 +251,37 @@
         <div class="instagram-title">
             <h2>@THEBIVVIHOSTEL</h2>
         </div>
-        <div class="instagarm-body">
-                <img class="instagarm-img" src="./img/instagarm/image-asset.jpeg">
-                <img class="instagarm-img" src="./img/instagarm/image-asset (1).jpeg">
-                <img class="instagarm-img" src="./img/instagarm/image-asset (2).jpeg">
-                <img class="instagarm-img" src="./img/instagarm/image-asset (3).jpeg">
-                <img class="instagarm-img" src="./img/instagarm/image-asset (4).jpeg">
-                <img class="instagarm-img" src="./img/instagarm/image-asset (5).jpeg">
-                <img class="instagarm-img" src="./img/instagarm/image-asset (6).jpeg">
-                <img class="instagarm-img" src="./img/instagarm/image-asset (7).jpeg">
-                <img class="instagarm-img" src="./img/instagarm/image-asset (8).jpeg">
-                <img class="instagarm-img" src="./img/instagarm/image-asset (9).jpeg">
+        <div class="instagram-body">
+                <div class="instagram-img-container">
+                    <img class="instagram-img" src="./img/instagram/image-asset.jpeg">
+                </div>
+                <div class="instagram-img-container">
+                    <img class="instagram-img" src="./img/instagram/image-asset (1).jpeg">
+                </div>
+                <div class="instagram-img-container">
+                    <img class="instagram-img" src="./img/instagram/image-asset (2).jpeg">
+                </div>
+                <div class="instagram-img-container">
+                    <img class="instagram-img" src="./img/instagram/image-asset (3).jpeg">
+                </div>
+                <div class="instagram-img-container">
+                    <img class="instagram-img" src="./img/instagram/image-asset (4).jpeg">
+                </div>
+                <div class="instagram-img-container">
+                    <img class="instagram-img" src="./img/instagram/image-asset (5).jpeg">
+                </div>
+                <div class="instagram-img-container">
+                    <img class="instagram-img" src="./img/instagram/image-asset (6).jpeg">
+                </div>
+                <div class="instagram-img-container">
+                    <img class="instagram-img" src="./img/instagram/image-asset (7).jpeg">
+                </div>
+                <div class="instagram-img-container">
+                    <img class="instagram-img" src="./img/instagram/image-asset (8).jpeg">
+                </div>
+                <div class="instagram-img-container">
+                    <img class="instagram-img" src="./img/instagram/image-asset (9).jpeg">
+                </div>
         </div>
     </div>
 
@@ -246,16 +321,12 @@
             </div>
             
             <div class="contactUs-right">
-                <div class="testMap" style="
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    box-shadow: 0 0 0 1px black;
-                ">
-                    ТУТ БУДЕТ КАРТА
-                </div>
+                <h3 class="map-title">THE BIVVI HOSTEL</h3>
+                <a class="map-link" href="https://go.2gis.com/by7vd">​
+                    9511 Colorado 9,<br>
+                    Breckenridge, CO, 80424, USA
+                </a>
+                <div id="map"></div>
             </div>
         </div>
     </div>

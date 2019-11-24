@@ -1,6 +1,12 @@
 .flex{
     display: flex;
 }
+.hidden{
+    display: none !important;
+}
+.no-scroll {
+    overflow: hidden;
+}
 
 html, body{
     margin: 0;
@@ -55,6 +61,24 @@ a {
     border-radius: 100px;
     background: black;
 }
+.anchorBar div a span {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 3rem;
+    color: #ffffff;
+    background-color: #00000047;
+    border-radius: 7px;
+    font-size: 13px;
+    font-family: Heebo-light;
+    padding: 0px 6px;
+    transition: 0.1s;
+}
+.anchorBar div a:hover span{
+    visibility: visible;
+    right: 2.5rem;
+}
 .Header{
     font-family: Heebo;
     font-weight: 500;
@@ -80,7 +104,57 @@ a {
     width: 100%;
     cursor: pointer;
 }
-
+.Header-hamburger {
+    width: 20px;
+    display: none;
+    height: 20px;
+    overflow: hidden;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+.Header-hamburger img {
+    width: 100%;
+    height: 100%;
+}
+.mb-menu {
+    position: fixed;
+    display: flex;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+}
+.close-mb-menu {
+    width: 20vw;
+    height: 100vh;
+    z-index: 999999;
+    background-color: #1a77f8d9;
+}
+.mb-menu-container{
+    overflow: hidden;
+    width: 80vw;
+}
+.mb-menu .Header-nav-inner {
+    transition: 0.1s;
+    width: 80vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #191606;
+    font-family: Heebo;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: .0em;
+    line-height: 0.5em;
+    text-transform: uppercase;
+    color: #fff;
+    overflow-y: scroll;
+}
+.mb-menu .Header-nav-item{
+    margin: 0 0.3em;
+}
 .Header-nav{
     padding: 24px 24px;
     white-space: nowrap;
@@ -122,7 +196,31 @@ a {
     text-align: left;
     color: #818283;
 }
-
+.mb-Header-nav-folder {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    transition: 0.1s;
+    width: 80vw;
+    height: 100vh;
+    align-items: flex-start;
+    background-color: #191606;
+    font-family: Heebo;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: .0em;
+    line-height: 2em;
+    text-transform: uppercase;
+    color: #fff;
+    overflow-y: scroll;
+    padding: 0;
+}
+.mb-Header-nav-folder .Header-nav-folder-item {
+    margin: 0 12px;
+}
 .Header-nav-item--folder:hover .Header-nav-folder{
     left: auto;
     top: auto;
@@ -199,14 +297,15 @@ button.Welcome--BookNowBtn:hover{
     padding: 17px;
     display: flex;
     flex-direction: column;
-    width: 20.73vw;
-    height: 20.73vw;
+    width: 317px;
+    height: 317px;
     color: #fff;
 }
-.rooms-card-img{
+.rooms-card-img {
     transition: 0.5s;
     position: absolute;
     z-index: -1;
+    height: 100%;
 }
 .rooms-card-container:hover .rooms-card-img {
     transform: scale(1.1);
@@ -360,21 +459,32 @@ p.rooms-form-subtitle {
 }
 
 .instagram {
-    padding: 14px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.instagarm-body {
+.instagram-body {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1300px;
+    overflow: hidden;
 }
-img.instagarm-img {
+.instagram-img-container {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    width: 220px;
+    height: 220px;
+}
+.instagram-img {
+    height: 130%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 18vw;
-    height: 18vw;
-    cursor: pointer;
 }
 .instagram-title h2 {
     margin: 30px 0;
@@ -474,6 +584,7 @@ img.instagarm-img {
 
 .footer-container {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
 }
 

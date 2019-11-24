@@ -1,0 +1,29 @@
+.galleryPage {
+    padding: 1rem 3rem;
+}
+.galleryPage h1 {
+    text-align: center;
+    color: #242424;
+    font-family: trump-gothic-pro;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 160px;
+    letter-spacing: 0.1em;
+    line-height: 1.1em;
+    text-transform: uppercase;
+    margin: 0;
+    box-shadow: 0px 1px 0 0px rgba(66,66,66,.65);
+}
+.galleryPage-container{
+    display: flex;
+    justify-content: center;
+}
+.galleryPage-col{
+    list-style-type: none;
+    padding: 0;
+    width: min-content;
+}
+.galleryPage-col img{
+    width: 355px;
+    margin: 1rem;
+}

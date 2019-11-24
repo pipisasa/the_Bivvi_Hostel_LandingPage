@@ -1,0 +1,28 @@
+.contactUs-right #map{
+    width: 45vw;
+    height: 30vw;
+}
+
+.map-title{
+    margin: 0;
+    color: black;
+    font-family: Heebo;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: .11em;
+    line-height: 1.8em;
+    text-transform: uppercase;
+}
+
+.map-link {
+    font-size: 12px;
+    text-decoration: underline;
+    text-underline-position: under;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.map-link:hover{
+    color: #000;
+}
