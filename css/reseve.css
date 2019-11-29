@@ -43,6 +43,8 @@ input[type="date"], focus {
     align-items: flex-end;
 }
 .reserve-search__btn{
+    padding: 10px 50px;
+    cursor: pointer;
     background: #0a73fc;
     border-radius: 2px;
     border-width: 0 !important;
@@ -66,4 +68,10 @@ input[type="date"], focus {
 }
 .reserve-pages-tb{
     width: 100%;
+}
+.reserve-pages-tb-type{
+    display: flex;
+}
+.reserve-pages-tb td {
+    text-align: center;
 }
