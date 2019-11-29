@@ -7,7 +7,7 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
     <link rel="stylesheet" href="./css/Fonts/fonts.css">
-    <link rel="stylesheet" href="./css/gettingHere.css">
+    <link rel="stylesheet" href="./css/reseve.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>The Bivvi Hostel | Breckenrodge, CO</title>
 </head>
@@ -127,26 +127,51 @@
     </header>
     
 <!-- /////////////////////////////////////////////////////////////////////////////////// -->
-    <div class="gettingHere">
-        <a name="all" id="all"></a>
-        <h1>getting Here</h1>
-        <h3 class="gettingHere-address">
-            <a class="map-link" href="https://go.2gis.com/by7vd">​
-                9511 Colorado 9,<br>
-                Breckenridge, CO, 80424, USA
-            </a>
-        </h3>
-        <div class="gettingHere-container">
-            <div class="gettingHere-desc">
-                <h3>Door-to-Door Shuttle</h3><p><strong><a target="_blank" href="https://freshtrackstransportation.zaui.net/modules/webBooking/index.php?action=Details&amp;id=55&amp;vendorId=439&amp;promoCode=tb">Click Here</a>&nbsp;</strong>to reserve your spot and receive 10% off shuttle rides with <strong><a target="_blank" href="https://freshtrackstransportation.zaui.net/modules/webBooking/index.php?action=Details&amp;id=55&amp;vendorId=439&amp;promoCode=tb">Fresh Tracks Transportation</a></strong></p><p>Fresh Tracks Transportation provides shuttle service between the Denver International Airport and Breckenridge, Colorado. With their service, getting airport shuttles to Breckenridge has never been easier. They offer a daily schedule through the entire winter season offering multiple Breckenridge to Denver shuttle times. No matter when your flight lands or departs the Denver International Airport, they will have a shuttle time that suits your Denver to Breckenridge needs. Shuttle service from Breckenridge to Denver takes approximately 1 hour and 45 minutes.</p>
+    <div class="reserve">
+        <h1 class="reserve-title">The Bivvi Hostel</h1>
+        <div class="reserve-container">
+            <div class="reserve-search">
+                <div class="reserve-search__checkIn">
+                    <p>Заезд</p>
+                    <input type="date" id="checkIn-input" class="reserve-search-input">
+                </div>
+                <div class="reserve-search__checkOut">
+                    <p>Выезд</p>
+                    <input type="date" id="checkOut-input" class="reserve-search-input">
+                </div>
+                <button>Поиск</button>
             </div>
-            <div class="gettingHere-desc">
-                <h3>Door-to-Door Shuttle</h3><p><strong><a target="_blank" href="https://freshtrackstransportation.zaui.net/modules/webBooking/index.php?action=Details&amp;id=55&amp;vendorId=439&amp;promoCode=tb">Click Here</a>&nbsp;</strong>to reserve your spot and receive 10% off shuttle rides with <strong><a target="_blank" href="https://freshtrackstransportation.zaui.net/modules/webBooking/index.php?action=Details&amp;id=55&amp;vendorId=439&amp;promoCode=tb">Fresh Tracks Transportation</a></strong></p><p>Fresh Tracks Transportation provides shuttle service between the Denver International Airport and Breckenridge, Colorado. With their service, getting airport shuttles to Breckenridge has never been easier. They offer a daily schedule through the entire winter season offering multiple Breckenridge to Denver shuttle times. No matter when your flight lands or departs the Denver International Airport, they will have a shuttle time that suits your Denver to Breckenridge needs. Shuttle service from Breckenridge to Denver takes approximately 1 hour and 45 minutes.</p>
+            <div class="reserve-pages">
+                <table>
+                    <thead>
+                        <caption>Выбрать комнату</caption>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>тип номера</th>
+                            <th>цена от</th>
+                            <th>Цена за 1Ночь (и)</th>
+                            <th>Максимум</th>
+                            <th>Взрослые</th>
+                            <th>Комнаты</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="" alt="CATACOMBS">
+                                <h3>catacombs</h3>
+                            </td>
+                            <td>USD 189,00</td>
+                            <td>
+                                USD 189,00 <br>
+                                только 1 осталось
+                            </td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="gettingHere-desc">
-                <h3>Local Bus</h3><p>Already in the area? Summit County offers free bus transportation all over the county! The <strong><a target="_blank" href="http://www.co.summit.co.us/index.aspx?NID=915">Summit Stage</a></strong>&nbsp;will take you to and from Breckenridge, Frisco, Silverthorne, Dillon, Keystone and A-basin.&nbsp;<strong><a target="_blank" href="http://www.co.summit.co.us/index.aspx?NID=915">Click Here</a></strong>&nbsp;to view Summit Stage routes and schedule.</p><p>The <strong><a target="_blank" href="http://www.breckfreeride.com/">Breckenridge Free Ride</a></strong>&nbsp;offers routes all around the town of Breck. The Bivvi is located along the <a target="_blank" href="https://www.breckfreeride.com/routes-schedules/system-map">Grey-&nbsp;Southside Route</a>&nbsp;in the summer months and the <a target="_blank" href="https://www.breckfreeride.com/routes-schedules/system-map">Brown Route</a> in the winter months. Simply ask your driver to take you to The Bivvi.&nbsp;<strong><a target="_blank" href="http://www.breckfreeride.com/">Click Here</a></strong>&nbsp;to view FreeRide routes and schedule.</p>
-            </div>
-            <div id="map"></div>
         </div>
     </div>
 
@@ -179,7 +204,11 @@
         </div>
         <p class="copyright">© 2019 Copyright by Pipisasa. All rights reserved.</p>
     </footer>
-
-
+    <script>
+        let checkInInput = document.getElementById('checkIn-input')
+        checkInInput.value = new Date().toJSON().slice(0,10);
+        checkInInput.min = new Date().toJSON().slice(0,10);
+        checkInInput.max = '2021-10-10';
+    </script>
 </body>
 </html>
