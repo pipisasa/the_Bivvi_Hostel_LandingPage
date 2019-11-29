@@ -34,7 +34,36 @@ input[type="date"], focus {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
 }
+.reserve-container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
 .reserve-search {
     display: flex;
     align-items: flex-end;
+}
+.reserve-search__btn{
+    background: #0a73fc;
+    border-radius: 2px;
+    border-width: 0 !important;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: box-shadow .28s cubic-bezier(0.4,0,0.2,1);
+}
+.reserve-title{
+    background-color: #444;
+    color: #FFF;
+    font-family: 'Roboto',sans-serif;
+    margin: 0;
+    margin-top: 10px;
+    font-size: 27px;
+    font-weight: 300;
+    padding: 1rem;
+}
+.reserve-pages-tb{
+    width: 100%;
 }
