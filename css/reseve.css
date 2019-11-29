@@ -83,11 +83,30 @@ input[type="date"], focus {
 .reserve-pages-tb{
     width: 100%;
 }
+.reserve-pages-firsTd{
+    width: 30%;
+}
 .reserve-pages-tb-type{
     display: flex;
+    align-items: center;
+}
+.reserve-pages-tb-type-img-container {
+    position: relative;
+    width: 7rem;
+    overflow: hidden;
+    height: 5rem;
+    margin: 0 3rem 0 0;
+}
+.reserve-pages-tb-type-img-container img {
+    width: 110%;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
 }
 .reserve-pages-tb td {
     text-align: center;
+    padding: 0 16px;
 }
 .reserve-pages-tb-head{
     background: #f0f0f0;
@@ -95,7 +114,7 @@ input[type="date"], focus {
 .reserve-pages-tb-head th {
     padding: 1rem 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 13px;
+    font-size: 11px;
 }
 .reserve-info-container {
     padding: 10px;
