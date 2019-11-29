@@ -34,13 +34,19 @@ input[type="date"], focus {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
 }
+.reserve{
+    background-color: #fafafa;
+}
 .reserve-container {
     max-width: 1220px;
     margin: 0 auto;
+    color: #333;
 }
 .reserve-search {
     display: flex;
     align-items: flex-end;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
 }
 .reserve-search__btn{
     padding: 10px 50px;
@@ -66,6 +72,14 @@ input[type="date"], focus {
     font-weight: 300;
     padding: 1rem;
 }
+.reserve-page-title {
+    padding: 20px 0;
+    font-size: 27px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #FFF;
+    background-color: #444444;
+}
 .reserve-pages-tb{
     width: 100%;
 }
@@ -74,4 +88,16 @@ input[type="date"], focus {
 }
 .reserve-pages-tb td {
     text-align: center;
+}
+.reserve-pages-tb-head{
+    background: #f0f0f0;
+}
+.reserve-pages-tb-head th {
+    padding: 1rem 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+.reserve-info-container {
+    padding: 10px;
+    background-color: #FFF;
 }
