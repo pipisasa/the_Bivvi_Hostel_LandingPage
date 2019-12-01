@@ -151,7 +151,7 @@
                         </div>
                         <div class="reserve-form-item">
                             <p>имя:</p>
-                            <input class="reserve-form-input" type="number" name="number" id="" placeholder="Телефон">
+                            <input class="reserve-form-input" type="tel" name="number" id="" placeholder="Телефон">
                         </div>
                     </div>
                     <div class="reserve-form-row">
@@ -199,6 +199,33 @@
                             <textarea  class="reserve-form-input" name="comment" id="comment"></textarea>
                         </div>
                     </div>
+                    
+                    <h3>СПОСОБ ОПЛАТЫ</h3>
+                    <div>
+                        <input type="radio" name="" id="" value="credit-card">Кредитная карта
+                    </div>
+                    <div class="reserve-form-row">
+                        <div class="reserve-form-item">
+                            <p>Номер карты</p>
+                            <div class="reserve-form-card">
+                                <input class="reserve-form-input" type="tel" placeholder="**** **** ****" name="credit-card-number">
+                                <input class="reserve-form-input" type="tel" placeholder="ММ/ГГ" name="credit-card-date">
+                                <input class="reserve-form-input" type="tel" placeholder="CVC" name="credit-card-cvc">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reserve-form-row">
+                        <div class="reserve-form-item">
+                            <p>Имя на карте</p>
+                            <input class="reserve-form-input" type="text" name="credit-card-name">
+                        </div>
+                    </div>
+                    
+                    <div class="reserve-check">
+                        <h3>100% Безопасная покупка</h3>
+                        <button class="reserve-btn"><a href="./reserve-form.html">Забронировать</a></button>
+                    </div>
+
                 </form>
                 <div class="reserve--this-info">
                     <h3>Ваше бронирование</h3>

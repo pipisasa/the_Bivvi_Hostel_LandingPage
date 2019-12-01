@@ -143,6 +143,16 @@ form.reserve__form {
     flex-direction: column;
     padding: 1rem;
 }
+.reserve-form-row {
+    display: flex;
+    justify-content: space-between;
+}
+.reserve-form-item {
+    width: 45%;
+    margin: 30px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
 .reserve-form-item p {
     margin: 0;
     font-size: 12px;
@@ -150,4 +160,10 @@ form.reserve__form {
 .reserve-form-input {
     border: none;
     border-bottom: 1px solid #d0d0d0;
+    outline: none;
+}
+.reserve-form-input:focus{
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid blue;
 }
