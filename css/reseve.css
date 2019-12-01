@@ -35,7 +35,8 @@ input[type="date"], focus {
     -moz-box-shadow: none;
 }
 .reserve{
-    background-color: #fafafa;
+    background-color: #eaeaea;
+    font-family: 'Roboto', sans-serif;
 }
 .reserve-container {
     max-width: 1220px;
@@ -132,4 +133,21 @@ input[type="date"], focus {
     background: inherit;
     padding: 4px 4px;
     font-family: inherit;
+}
+
+
+
+form.reserve__form {
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.reserve-form-item p {
+    margin: 0;
+    font-size: 12px;
+}
+.reserve-form-input {
+    border: none;
+    border-bottom: 1px solid #d0d0d0;
 }

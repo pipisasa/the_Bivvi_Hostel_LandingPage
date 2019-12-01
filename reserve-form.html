@@ -131,42 +131,115 @@
     <div class="reserve">
         <h1 class="reserve-title">The Bivvi Hostel</h1>
         <div class="reserve-container">
-            <div class="reserve-pages">
-                <form action="">
-                    <input type="text" name="first_name" placeholder="Имя">
-                    <input type="text" name="last_name" placeholder="Фамилия">
-                    <input type="email" name="email" id="" placeholder="Эл. адрес">
-                    <input type="number" name="number" id="" placeholder="Телефон">
-                    <select name="country" id="country">
-                        <option value="KG">Кыргызстан</option>
-                    </select>
-                    <select name="time" id="time">
-                        <option value="00:00">01:00 AM</option>
-                        <option value="00:00">02:00 AM</option>
-                        <option value="00:00">03:00 AM</option>
-                        <option value="00:00">04:00 AM</option>
-                        <option value="00:00">05:00 AM</option>
-                        <option value="00:00">06:00 AM</option>
-                        <option value="00:00">07:00 AM</option>
-                        <option value="00:00">08:00 AM</option>
-                        <option value="00:00">09:00 AM</option>
-                        <option value="00:00">10:00 AM</option>
-                        <option value="00:00">11:00 AM</option>
-                        <option value="00:00">12:00 PM</option>
-                        <option value="00:00">01:00 PM</option>
-                        <option value="00:00">02:00 PM</option>
-                        <option value="00:00">03:00 PM</option>
-                        <option value="00:00">04:00 PM</option>
-                        <option value="00:00">05:00 PM</option>
-                        <option value="00:00">06:00 PM</option>
-                        <option value="00:00">07:00 PM</option>
-                        <option value="00:00">08:00 PM</option>
-                        <option value="00:00">09:00 PM</option>
-                        <option value="00:00">10:00 PM</option>
-                        <option value="00:00">11:00 PM</option>
-                        <option value="00:00">12:00 AM</option>
-                    </select>
+            <div class="reserve--form">
+                <form class="reserve__form" action="">
+                    <h3>Контактная информация</h3>
+                    <div class="reserve-form-row">
+                        <div class="reserve-form-item">
+                            <p>имя:</p>
+                            <input class="reserve-form-input" type="text" name="first_name" placeholder="Имя">
+                        </div>
+                        <div class="reserve-form-item">
+                            <p>имя:</p>
+                            <input class="reserve-form-input" type="text" name="last_name" placeholder="Фамилия">
+                        </div>
+                    </div>
+                    <div class="reserve-form-row">
+                        <div class="reserve-form-item">
+                            <p>имя:</p>
+                            <input class="reserve-form-input" type="email" name="email" id="" placeholder="Эл. адрес">
+                        </div>
+                        <div class="reserve-form-item">
+                            <p>имя:</p>
+                            <input class="reserve-form-input" type="number" name="number" id="" placeholder="Телефон">
+                        </div>
+                    </div>
+                    <div class="reserve-form-row">
+                        <div class="reserve-form-item">
+                            <p>имя:</p>
+                            <select  class="reserve-form-input" name="country" id="country">
+                                <option value="KG">Кыргызстан</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="reserve-form-row">
+                        <div class="reserve-form-item">
+                            <p>имя:</p>
+                            <select class="reserve-form-input" name="time" id="time">
+                                <option value="00:00">01:00 AM</option>
+                                <option value="00:00">02:00 AM</option>
+                                <option value="00:00">03:00 AM</option>
+                                <option value="00:00">04:00 AM</option>
+                                <option value="00:00">05:00 AM</option>
+                                <option value="00:00">06:00 AM</option>
+                                <option value="00:00">07:00 AM</option>
+                                <option value="00:00">08:00 AM</option>
+                                <option value="00:00">09:00 AM</option>
+                                <option value="00:00">10:00 AM</option>
+                                <option value="00:00">11:00 AM</option>
+                                <option value="00:00">12:00 PM</option>
+                                <option value="00:00">01:00 PM</option>
+                                <option value="00:00">02:00 PM</option>
+                                <option value="00:00">03:00 PM</option>
+                                <option value="00:00">04:00 PM</option>
+                                <option value="00:00">05:00 PM</option>
+                                <option value="00:00">06:00 PM</option>
+                                <option value="00:00">07:00 PM</option>
+                                <option value="00:00">08:00 PM</option>
+                                <option value="00:00">09:00 PM</option>
+                                <option value="00:00">10:00 PM</option>
+                                <option value="00:00">11:00 PM</option>
+                                <option value="00:00">12:00 AM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="reserve-form-row">
+                        <div class="reserve-form-item">
+                            <p>имя:</p>
+                            <textarea  class="reserve-form-input" name="comment" id="comment"></textarea>
+                        </div>
+                    </div>
                 </form>
+                <div class="reserve--this-info">
+                    <h3>Ваше бронирование</h3>
+                    <hr class="reserve--this-info-hr">
+                    <p>
+                        <strong>Выбор номера:</strong><br>
+                        catacombs
+                    </p>
+                    <p>
+                        <strong>Дата прибытия:</strong><br>
+                        12/01/2019
+                    </p>
+                    <p>
+                        <strong>Дата отъезда:</strong><br>
+                        12/2/2019
+                    </p>
+                    <p>
+                        <strong>Ночи в номере:</strong><br>
+                        1
+                    </p>
+                    <p>
+                        <div>
+                            <span>Всего комнат:</span>
+                            <span>USD 189,00</span>
+                        </div>
+                        <div>
+                            <span>Дополнительный:</span>
+                            <span>USD 0</span>
+                        </div>
+                        <div>
+                            <span>взрослый (x0)::</span>
+                            <span>USD 0</span>
+                        </div>
+                    </p>
+                    <p>
+                        <div>
+                            <span>Общая сумма:</span>
+
+                        </div>
+                    </p>
+                </div>
             </div>
             <div class="reserve-info">
                 <h2 class="reserve-title">Информация об объекте размещения</h2>
