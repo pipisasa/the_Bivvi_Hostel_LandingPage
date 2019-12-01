@@ -21,12 +21,13 @@
 
 .room-item {
     display: flex;
-    align-items: flex-start;
-    padding: 2rem 5rem;
+    max-width: 100%;
+    justify-content: space-between;
+    padding: 1rem 2rem;
 }
 
 .room-item-desc {
-    padding: 0 0 0 9rem;
+    width: 45%;
 }
 
 .room-item h3{
@@ -95,9 +96,8 @@
     color: white;
 }
 
-.test{
-    width: 200vw;
-    height: 50vw;
+.test {
+    width: 45%;
     position: relative;
     overflow: hidden;
 }

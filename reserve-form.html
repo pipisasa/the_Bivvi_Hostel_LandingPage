@@ -131,67 +131,42 @@
     <div class="reserve">
         <h1 class="reserve-title">The Bivvi Hostel</h1>
         <div class="reserve-container">
-            <div class="reserve-search">
-                <div class="reserve-search__checkIn">
-                    <p>Заезд</p>
-                    <input type="date" id="checkIn-input" class="reserve-search-input">
-                </div>
-                <div class="reserve-search__checkOut">
-                    <p>Отъезд</p>
-                    <input type="date" id="checkOut-input" class="reserve-search-input">
-                </div>
-                <button class="reserve-search__btn reserve-btn">Поиск</button>
-            </div>
             <div class="reserve-pages">
-                <table class="reserve-pages-tb">
-                    <caption class="reserve-page-title">Выбрать комнату</caption>
-                    <thead>
-                        <tr class="reserve-pages-tb-head">
-                            <th>тип номера</th>
-                            <th>цена от</th>
-                            <th>Цена за 1Ночь (и)</th>
-                            <th>Максимум</th>
-                            <th>Взрослые</th>
-                            <th>Комнаты</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="reserve-pages-firsTd">
-                                <div class="reserve-pages-tb-type">
-                                    <div class="reserve-pages-tb-type-img-container">
-                                        <img src="./img/Catacombs.jpg" alt="CATACOMBS">
-                                    </div>
-                                    <a>catacombs</a>
-                                </div>
-                            </td>
-                            <td>USD 189,00</td>
-                            <td>
-                                USD 189,00 <br>
-                                только 1 осталось
-                            </td>
-                            <td>2</td>
-                            <td>
-                                <select name="adults_quantity" id="">
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                </select>
-                            </td>
-                            <td>
-                                <select name="rooms_quantity" id="">
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                </select>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="reserve-check">
-                    <h3>100% Безопасная покупка</h3>
-                    <button class="reserve-btn"><a href="./reserve-form.html">Забронировать</a></button>
-                </div>
+                <form action="">
+                    <input type="text" name="first_name" placeholder="Имя">
+                    <input type="text" name="last_name" placeholder="Фамилия">
+                    <input type="email" name="email" id="" placeholder="Эл. адрес">
+                    <input type="number" name="number" id="" placeholder="Телефон">
+                    <select name="country" id="country">
+                        <option value="KG">Кыргызстан</option>
+                    </select>
+                    <select name="time" id="time">
+                        <option value="00:00">01:00 AM</option>
+                        <option value="00:00">02:00 AM</option>
+                        <option value="00:00">03:00 AM</option>
+                        <option value="00:00">04:00 AM</option>
+                        <option value="00:00">05:00 AM</option>
+                        <option value="00:00">06:00 AM</option>
+                        <option value="00:00">07:00 AM</option>
+                        <option value="00:00">08:00 AM</option>
+                        <option value="00:00">09:00 AM</option>
+                        <option value="00:00">10:00 AM</option>
+                        <option value="00:00">11:00 AM</option>
+                        <option value="00:00">12:00 PM</option>
+                        <option value="00:00">01:00 PM</option>
+                        <option value="00:00">02:00 PM</option>
+                        <option value="00:00">03:00 PM</option>
+                        <option value="00:00">04:00 PM</option>
+                        <option value="00:00">05:00 PM</option>
+                        <option value="00:00">06:00 PM</option>
+                        <option value="00:00">07:00 PM</option>
+                        <option value="00:00">08:00 PM</option>
+                        <option value="00:00">09:00 PM</option>
+                        <option value="00:00">10:00 PM</option>
+                        <option value="00:00">11:00 PM</option>
+                        <option value="00:00">12:00 AM</option>
+                    </select>
+                </form>
             </div>
             <div class="reserve-info">
                 <h2 class="reserve-title">Информация об объекте размещения</h2>
@@ -304,11 +279,5 @@
         </div>
         <p class="copyright">© 2019 Copyright by Pipisasa. All rights reserved.</p>
     </footer>
-    <script>
-        let checkInInput = document.getElementById('checkIn-input')
-        checkInInput.value = new Date().toJSON().slice(0,10);
-        checkInInput.min = new Date().toJSON().slice(0,10);
-        checkInInput.max = '2021-10-10';
-    </script>
 </body>
 </html>

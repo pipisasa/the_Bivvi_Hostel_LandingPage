@@ -48,7 +48,7 @@ input[type="date"], focus {
     padding: 10px;
     font-family: 'Roboto', sans-serif;
 }
-.reserve-search__btn{
+.reserve-btn{
     padding: 10px 50px;
     cursor: pointer;
     background: #0a73fc;
@@ -82,6 +82,7 @@ input[type="date"], focus {
 }
 .reserve-pages-tb{
     width: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 .reserve-pages-firsTd{
     width: 30%;
@@ -119,4 +120,16 @@ input[type="date"], focus {
 .reserve-info-container {
     padding: 10px;
     background-color: #FFF;
+}
+.reserve-check{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto',sans-serif;
+    background: #f0f0f0;
+}
+.reserve select {
+    background: inherit;
+    padding: 4px 4px;
+    font-family: inherit;
 }
