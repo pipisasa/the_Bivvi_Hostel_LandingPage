@@ -142,9 +142,21 @@
                 </div>
                 <button class="reserve-search__btn reserve-btn">Поиск</button>
             </div>
-            <div class="reserve-pages">
-                <table class="reserve-pages-tb">
-                    <caption class="reserve-page-title">Выбрать комнату</caption>
+            <div id="reserve-pages" class="reserve-pages">
+                <div class="reserve-page--title">
+                    <button class="reserve-page-title reserve-page-title-active">
+                        <span>
+                            Выбрать комнату
+                        </span>
+                    </button>
+                    <div class="reserve-page-title-rect"></div>
+                    <button disabled onclick="reservePageClick()" class="reserve-page-title">
+                        <span>
+                            Дата отъезда
+                        </span>
+                    </button>
+                </div>
+                <table class="reserve-pages-tb hidden">
                     <thead>
                         <tr class="reserve-pages-tb-head">
                             <th>тип номера</th>
@@ -188,13 +200,213 @@
                         </tr>
                     </tbody>
                 </table>
+
+                <ul class="reserve-pages-list">
+                    <li class="reserve-pages-item">
+                        <div class="reserve-pages-item-type">
+                            <div class="reserve-pages-item-type-img-container">
+                                <img src="./img/Catacombs.jpg" alt="CATACOMBS">
+                            </div>
+                            <p class="reserve-pages-item-name">catacombs</p>
+                        </div>
+                        <div class="reserve-pages-item-row">
+                            <span>Цена от</span>
+                            <span>$ 189.00</span>
+                        </div>
+                        <hr>
+                        <div class="reserve-pages-item-row">
+                            <span>Цена за 1 ночь (и)</span>
+                            <span>$ 189.00</span>
+                        </div>
+                        <hr>
+                        <div class="reserve-pages-item-row">
+                            <span>Максимум</span>
+                            <span>2</span>
+                        </div>
+                        <hr>
+                        <div class="reserve-pages-item-row">
+                            <span>Минимальное пребывание</span>
+                            <span>1 ночь (и)</span>
+                        </div>
+                        <hr>
+                        <div class="reserve-pages-item-row">
+                            <div class="reserve-pages-item-select">
+                                <span>Взрослые</span>
+                                <select name="adults_quantity" id="adults_quantity">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                            </div>
+                            <div class="reserve-pages-item-select">
+                                <span>Комнаты</span>
+                                <select name="rooms_quantity" id="rooms_quantity">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
                 <div class="reserve-check">
                     <h3>100% Безопасная покупка</h3>
-                    <button class="reserve-btn"><a href="./reserve-form.html">Забронировать</a></button>
+                    <button onclick="reservePageClick()" class="reserve-btn">Забронировать</button>
+                </div>
+            </div>
+            <div id="reserve--form" class="hidden reserve--form">
+                <div class="reserve-page--title">
+                    <button onclick="reservePageClick()" class="reserve-page-title">
+                        <span>
+                            Выбрать комнату
+                        </span>
+                    </button>
+                    <div class="reserve-page-title-rect"></div>
+                    <button class="reserve-page-title reserve-page-title-active">
+                        <span>
+                            Дата отъезда
+                        </span>
+                    </button>
+                </div>
+                <form class="reserve__form" action="">
+                    <h3>Контактная информация</h3>
+                    <div class="reserve-form-row">
+                        <div class="reserve-form-item">
+                            <p>имя:</p>
+                            <input class="reserve-form-input" type="text" name="first_name" placeholder="Имя">
+                        </div>
+                        <div class="reserve-form-item">
+                            <p>Фамилия:</p>
+                            <input class="reserve-form-input" type="text" name="last_name" placeholder="Фамилия">
+                        </div>
+                    </div>
+                    <div class="reserve-form-row">
+                        <div class="reserve-form-item">
+                            <p>Эл. адрес:</p>
+                            <input class="reserve-form-input" type="email" name="email" id="" placeholder="Эл. адрес">
+                        </div>
+                        <div class="reserve-form-item">
+                            <p>Телефон:</p>
+                            <input class="reserve-form-input" type="tel" name="number" id="" placeholder="Телефон">
+                        </div>
+                    </div>
+                    <div class="reserve-form-row">
+                        <div class="reserve-form-item">
+                            <p>Выберите вашу страну:</p>
+                            <select  class="reserve-form-input" name="country" id="country">
+                                <option value="KG">Кыргызстан</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="reserve-form-row">
+                        <div class="reserve-form-item">
+                            <p>Выберите предполагаемое время прибытия:</p>
+                            <select class="reserve-form-input" name="time" id="time">
+                                <option value="00:00">01:00 AM</option>
+                                <option value="00:00">02:00 AM</option>
+                                <option value="00:00">03:00 AM</option>
+                                <option value="00:00">04:00 AM</option>
+                                <option value="00:00">05:00 AM</option>
+                                <option value="00:00">06:00 AM</option>
+                                <option value="00:00">07:00 AM</option>
+                                <option value="00:00">08:00 AM</option>
+                                <option value="00:00">09:00 AM</option>
+                                <option value="00:00">10:00 AM</option>
+                                <option value="00:00">11:00 AM</option>
+                                <option value="00:00">12:00 PM</option>
+                                <option value="00:00">01:00 PM</option>
+                                <option value="00:00">02:00 PM</option>
+                                <option value="00:00">03:00 PM</option>
+                                <option value="00:00">04:00 PM</option>
+                                <option value="00:00">05:00 PM</option>
+                                <option value="00:00">06:00 PM</option>
+                                <option value="00:00">07:00 PM</option>
+                                <option value="00:00">08:00 PM</option>
+                                <option value="00:00">09:00 PM</option>
+                                <option value="00:00">10:00 PM</option>
+                                <option value="00:00">11:00 PM</option>
+                                <option value="00:00">12:00 AM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="reserve-form-row">
+                        <div class="reserve-form-item">
+                            <p>коментарий:</p>
+                            <textarea  class="reserve-form-input" name="comment" id="comment"></textarea>
+                        </div>
+                    </div>
+                    
+                    <h3>СПОСОБ ОПЛАТЫ</h3>
+                    <div>
+                        <input type="radio" name="payment-method" id="payment-method" checked value="credit-card">
+                    </div>
+                    <div class="reserve-form-row">
+                        <div class="reserve-form-item reserve-form--card">
+                            <p>Номер карты</p>
+                            <div class="reserve-form-card">
+                                <input class="reserve-form-input" type="tel" placeholder="**** **** ****" id="credit-card-number" name="credit-card-number">
+                                <input class="reserve-form-input" type="tel" placeholder="ММ/ГГ" id="credit-card-date" name="credit-card-date">
+                                <input class="reserve-form-input" type="tel" placeholder="CVC" id="credit-card-cvc" name="credit-card-cvc">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reserve-form-row">
+                        <div class="reserve-form-item">
+                            <p>Имя на карте</p>
+                            <input class="reserve-form-input" type="text" name="credit-card-name">
+                        </div>
+                    </div>
+                    
+                    <div class="reserve-check">
+                        <h3>100% Безопасная покупка</h3>
+                        <input type="submit" class="reserve-btn">Забронировать</input>
+                    </div>
+
+                </form>
+                <div class="reserve--this-info">
+                    <h3>Ваше бронирование</h3>
+                    <hr class="reserve--this-info-hr">
+                    <p>
+                        <strong>Выбор номера:</strong><br>
+                        catacombs
+                    </p>
+                    <p>
+                        <strong>Дата прибытия:</strong><br>
+                        12/01/2019
+                    </p>
+                    <p>
+                        <strong>Дата отъезда:</strong><br>
+                        12/2/2019
+                    </p>
+                    <p>
+                        <strong>Ночи в номере:</strong><br>
+                        1
+                    </p>
+                    <p>
+                        <div>
+                            <span>Всего комнат:</span>
+                            <span>$ 189,00</span>
+                        </div>
+                        <div>
+                            <span>Дополнительный:</span>
+                            <span>$ 0</span>
+                        </div>
+                        <div>
+                            <span>взрослый (x0):</span>
+                            <span>$ 0</span>
+                        </div>
+                    </p>
+                    <p>
+                        <div>
+                            <span>Общая сумма:</span>
+                            $ 189
+                        </div>
+                    </p>
                 </div>
             </div>
             <div class="reserve-info">
-                <h2 class="reserve-title">Информация об объекте размещения</h2>
+                <h3 class="reserve-title">Информация об объекте размещения</h3>
                 <div class="reserve-info-container">
                     <p>
                         A mountain lodge crafted as a base camp for adventurers, 
@@ -309,6 +521,12 @@
         checkInInput.value = new Date().toJSON().slice(0,10);
         checkInInput.min = new Date().toJSON().slice(0,10);
         checkInInput.max = '2021-10-10';
+
+        let reservePageClick = ()=>{
+            $('#reserve-pages').toggleClass('hidden');
+            $('#reserve--form').toggleClass('hidden');
+            $('body,html').animate({scrollTop: top}, 0);
+        }
     </script>
 </body>
 </html>

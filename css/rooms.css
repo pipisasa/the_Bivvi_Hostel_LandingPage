@@ -21,7 +21,7 @@
 
 .room-item {
     display: flex;
-    max-width: 100%;
+    margin: 0 auto;
     justify-content: space-between;
     padding: 1rem 2rem;
 }
@@ -101,8 +101,25 @@
     position: relative;
     overflow: hidden;
 }
-.test img{
+.test img {
+    height: 100%;
     transform: translate(-50%, 0);
     position: absolute;
     left: 50%;
+}
+
+@media screen and (max-width:1000px){
+    .roomsPage{
+        padding: 0;
+    }
+    .room-item{
+        flex-wrap: wrap;
+    }
+    .room-item .test {
+        width: 100%;
+        height: 100vw;
+    }
+    .room-item-desc{
+        width: 100%;
+    }
 }

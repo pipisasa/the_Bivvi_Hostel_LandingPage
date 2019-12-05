@@ -39,15 +39,20 @@ input[type="date"], focus {
     font-family: 'Roboto', sans-serif;
 }
 .reserve-container {
+    padding: 10px 0;
     max-width: 1220px;
     margin: 0 auto;
     color: #333;
 }
 .reserve-search {
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-end;
     padding: 10px;
     font-family: 'Roboto', sans-serif;
+}
+.reserve-search__btn{
+    margin: 50px 0 0 0;
 }
 .reserve-btn{
     padding: 10px 50px;
@@ -69,17 +74,48 @@ input[type="date"], focus {
     font-family: 'Roboto',sans-serif;
     margin: 0;
     margin-top: 10px;
-    font-size: 27px;
+    font-size: 27px !important;
     font-weight: 300;
     padding: 1rem;
 }
+.reserve-page--title {
+    display: flex;
+    position: relative;
+    background: #8d8d8d;
+    overflow: hidden;
+    justify-content: space-between;
+    margin: 20px 0;
+}
 .reserve-page-title {
-    padding: 20px 0;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 0;
+    width: 50%;
+    position: relative;
+    text-align: center;
+    height: 60px;
     font-size: 27px;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     color: #FFF;
+}
+.reserve-page-title span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.reserve-page-title-active {
     background-color: #444444;
+}
+.reserve-page-title-rect {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(45deg);
+    background: #444;
 }
 .reserve-pages-tb{
     width: 100%;
@@ -123,13 +159,17 @@ input[type="date"], focus {
     background-color: #FFF;
 }
 .reserve-check{
+    background-color: #03a9f469;
+    padding: 0 0 16px 0;
+    margin: 20px 0 0 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     font-family: 'Roboto',sans-serif;
-    background: #f0f0f0;
 }
 .reserve select {
+    outline: none;
     background: inherit;
     padding: 4px 4px;
     font-family: inherit;
@@ -162,8 +202,140 @@ form.reserve__form {
     border-bottom: 1px solid #d0d0d0;
     outline: none;
 }
+.reserve--this-info div {
+    display: flex;
+    justify-content: space-between;
+}
 .reserve-form-input:focus{
     box-shadow: none;
     border: none;
     border-bottom: 1px solid blue;
+}
+textarea#comment{
+    height: 3rem;
+}
+.reserve-form--card {
+    width: 100%;
+}
+#payment-method {
+    margin: 0;
+    position: relative;
+}
+#payment-method:after {
+    content: "Кредитная карта";
+    width: max-content;
+    position: absolute;
+    left: 1rem;
+}
+.reserve-form-card {
+    display: flex;
+}
+#credit-card-number {
+    width: 70%;
+}
+#credit-card-date, #credit-card-cvc {
+    width: 15%;
+}
+
+@media screen and (max-width:480px){
+    .reserve-page-title-rect{
+        visibility: hidden;
+    }
+    .reserve-page-title{
+        height: 40px;
+    }
+}
+@media screen and (max-width:650px){
+    .reserve-page-title{
+        font-size: 16px;
+    }
+    .reserve-form-row{
+        display: block;
+    }
+    .reserve-form-item{
+        width: 100%;
+    }
+    .reserve-search{
+        justify-content: space-between;
+    }
+    .reserve-search input {
+        width: 90%;
+        min-width: 130px;
+    }
+    .reserve-search__checkIn, .reserve-search__checkOut {
+        width: 45%;
+    }
+    .reserve-search__btn{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:350px){
+    .reserve-search__checkIn, .reserve-search__checkOut {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ________________________________________________________________________ */
+
+
+ul.reserve-pages-list {
+    list-style-type: none;
+    padding: 0;
+}
+.reserve-pages-item-type {
+    display: flex;
+    align-items: center;
+}
+.reserve-pages-item-type-img-container {
+    min-width: 120px;
+    min-height: 80px;
+    width: 15vw;
+    height: 10vw;
+    overflow: hidden;
+    position: relative;
+}
+.reserve-pages-item-type-img-container img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.reserve-pages-item-name {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.reserve-pages-item-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.reserve-pages-item-select {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60px;
+}
+li.reserve-pages-item {
+    background: #FFF;
+    padding: 10px;
+    margin: 10px 0;
+}
+li.reserve-pages-item hr {
+    margin: 0;
+    height: 1px;
+    border: none;
+    background: #0000002b;
 }
