@@ -11,25 +11,25 @@ input[type="date"]::-webkit-inner-spin-button {
 
 /* Always display the drop down caret */
 input[type="date"]::-webkit-calendar-picker-indicator {
-    color: #2c3e50;
+    color: #000;
 }
 
 /* A few custom styles for date inputs */
 input[type="date"] {
     appearance: none;
     -webkit-appearance: none;
-    color: #95a5a6;
+    color: #000;
     font-family: "Helvetica", arial, sans-serif;
-    font-size: 18px;
-    border:1px solid #ecf0f1;
-    background:#ecf0f1;
-    padding:5px;
+    font-size: 16px;
+    border: 1px solid #e5e5e5;
+    background: #ffffff;
+    padding: 6px 12px;
     display: inline-block !important;
     visibility: visible !important;
 }
 
 input[type="date"], focus {
-    color: #95a5a6;
+    color: #000;
     box-shadow: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -37,6 +37,52 @@ input[type="date"], focus {
 .reserve{
     background-color: #eaeaea;
     font-family: 'Roboto', sans-serif;
+}
+.reserve-table {
+    display: flex;
+}
+.reserve-search__checkIn, .reserve-search__checkOut {
+    padding: 0 15px;
+}
+.reserve-search p {
+    margin: 6px 0;
+}
+.reserve-check--tb{
+    width: 22vw;
+}
+.reserve-check-tb {
+    box-sizing: border-box;
+    border: 10px solid #eaeaea;
+    top: 34px;
+    right: 4px;
+    height: 1000000px;
+    position: absolute;
+    width: 24vw;
+    background: #c6e1ff;
+}
+.reserve-check-tb h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+.reserve-check-tb button{
+    padding: 20px 0;
+    width: 90%;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #0a73fc;
+    border-radius: 2px;
+    border-width: 0 !important;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+    transition: box-shadow .28s cubic-bezier(0.4,0,0.2,1);
+}
+.reserve-pages-item {
+    background: #FFF;
+    border: 7px solid #eaeaea;
+    box-sizing: border-box;
 }
 .reserve-container {
     padding: 10px 0;
@@ -52,13 +98,16 @@ input[type="date"], focus {
     font-family: 'Roboto', sans-serif;
 }
 .reserve-search__btn{
-    margin: 50px 0 0 0;
+    margin: 30px 0 0 0;
+}
+.reserve-search-input {
+    width: 144px;
 }
 .reserve-btn{
-    padding: 10px 50px;
+    padding: 10px 79px;
     cursor: pointer;
     background: #0a73fc;
-    border-radius: 2px;
+    border-radius: 3px;
     border-width: 0 !important;
     overflow: hidden;
     position: relative;
@@ -76,7 +125,7 @@ input[type="date"], focus {
     margin-top: 10px;
     font-size: 27px !important;
     font-weight: 300;
-    padding: 1rem;
+    padding: 1rem 5rem 35px 5rem;
 }
 .reserve-page--title {
     display: flex;
@@ -95,10 +144,11 @@ input[type="date"], focus {
     position: relative;
     text-align: center;
     height: 60px;
-    font-size: 27px;
+    font-size: 17px;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     color: #FFF;
+    text-transform: uppercase;
 }
 .reserve-page-title span {
     display: flex;
@@ -120,6 +170,10 @@ input[type="date"], focus {
 .reserve-pages-tb{
     width: 100%;
     font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    position: relative;
+    min-height: 12rem;
+    border-collapse: collapse;
 }
 .reserve-pages-firsTd{
     width: 30%;
@@ -127,12 +181,15 @@ input[type="date"], focus {
 .reserve-pages-tb-type{
     display: flex;
     align-items: center;
+    color: #165d86;
+    text-decoration: underline;
+    font-size: 16px;
 }
 .reserve-pages-tb-type-img-container {
     position: relative;
-    width: 7rem;
+    width: 100px;
     overflow: hidden;
-    height: 5rem;
+    height: 70px;
     margin: 0 3rem 0 0;
 }
 .reserve-pages-tb-type-img-container img {
@@ -144,25 +201,28 @@ input[type="date"], focus {
 }
 .reserve-pages-tb td {
     text-align: center;
-    padding: 0 16px;
+    padding: 5px 16px;
+    font-size: 13px;
 }
-.reserve-pages-tb-head{
+/* .reserve-pages-tb-head{
     background: #f0f0f0;
-}
+} */
 .reserve-pages-tb-head th {
-    padding: 1rem 0;
+    padding: 6px 0;
+    font-weight: 500;
     font-family: 'Roboto', sans-serif;
-    font-size: 11px;
+    font-size: 13px;
 }
 .reserve-info-container {
     padding: 10px;
     background-color: #FFF;
 }
 .reserve-check{
+
     background-color: #03a9f469;
     padding: 0 0 16px 0;
     margin: 20px 0 0 0;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -173,8 +233,30 @@ input[type="date"], focus {
     background: inherit;
     padding: 4px 4px;
     font-family: inherit;
+    border-radius: 3px;
 }
 
+
+.reserve-pages-slect-td{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reserve-pages-select-td span{
+    margin: 4px 0;
+    font-size: 11px;
+}
+.reserve-pages-select{
+    border: 0px solid;
+    background: #28a69b !important;
+    padding: 9px 13px !important;
+    color: #FFF;
+    cursor: pointer;
+}
+.reserve-pages-select option{
+    background: #FFF;
+    color: black
+}
 
 
 form.reserve__form {
@@ -275,7 +357,17 @@ textarea#comment{
         width: 100%;
     }
 }
-
+@media screen and (max-width:1000px){
+    .reserve-pages-list{
+        display: block !important;
+    }
+    .reserve-table{
+        display: none !important;
+    }
+    .reserve-check{
+        display: flex;
+    }
+}
 
 
 
@@ -289,7 +381,8 @@ textarea#comment{
 /* ________________________________________________________________________ */
 
 
-ul.reserve-pages-list {
+.reserve-pages-list {
+    display: none;
     list-style-type: none;
     padding: 0;
 }
@@ -338,4 +431,27 @@ li.reserve-pages-item hr {
     height: 1px;
     border: none;
     background: #0000002b;
+}
+
+
+
+.reserve-pages-item--modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999999999;
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    background: #00000073;
+}
+.reserve-pages-item-modal {
+    background: white;
+    width: 60%;
+    height: 70%;
+    margin-top: 11%;
 }

@@ -156,50 +156,162 @@
                         </span>
                     </button>
                 </div>
-                <table class="reserve-pages-tb hidden">
-                    <thead>
-                        <tr class="reserve-pages-tb-head">
-                            <th>тип номера</th>
-                            <th>цена от</th>
-                            <th>Цена за 1Ночь (и)</th>
-                            <th>Максимум</th>
-                            <th>Взрослые</th>
-                            <th>Комнаты</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="reserve-pages-firsTd">
-                                <div class="reserve-pages-tb-type">
-                                    <div class="reserve-pages-tb-type-img-container">
-                                        <img src="./img/Catacombs.jpg" alt="CATACOMBS">
+                <div class="reserve-table">
+                    <table class="reserve-pages-tb">
+                        <thead>
+                            <tr class="reserve-pages-tb-head">
+                                <th>Тип номера</th>
+                                <th>Цена от</th>
+                                <th>Цена за 1Ночь (и)</th>
+                                <th>Максимум</th>
+                                <th>Комнаты</th>
+                                <th>    </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="reserve-check--tb">
+                                    <div class="reserve-check-tb">
+                                        <h3>100% Безопасная покупка</h3>
+                                        <button onclick="reservePageClick()" class="reserve-btn">Забронировать</button>
                                     </div>
-                                    <a>catacombs</a>
-                                </div>
-                            </td>
-                            <td>USD 189,00</td>
-                            <td>
-                                USD 189,00 <br>
-                                только 1 осталось
-                            </td>
-                            <td>2</td>
-                            <td>
-                                <select name="adults_quantity" id="">
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                </select>
-                            </td>
-                            <td>
-                                <select name="rooms_quantity" id="">
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                </select>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                                </td>
+                            </tr>
+                            <tr class="reserve-pages-item">
+                                <td class="reserve-pages-firsTd">
+                                    <div class="reserve-pages-tb-type">
+                                        <div class="reserve-pages-tb-type-img-container">
+                                            <img src="./img/Catacombs.jpg" alt="CATACOMBS">
+                                        </div>
+                                        <a>catacombs</a>
+                                    </div>
+                                </td>
+                                <td>USD 189,00</td>
+                                <td>
+                                    USD 189,00 <br>
+                                    только 1 осталось
+                                </td>
+                                <td>2</td>
+                                <td class="reserve-pages-slect-td">
+                                    <span>комнаты</span>
+                                    <select name="rooms_quantity" id="" class="reserve-pages-select">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr class="reserve-pages-item">
+                                <td class="reserve-pages-firsTd">   
+                                    <div class="reserve-pages-item--modal">
+                                        <div class="reserve-pages-item-modal"></div>
+                                    </div>
+                                    <div class="reserve-pages-tb-type">
+                                        
+                                        <div class="reserve-pages-tb-type-img-container">
+                                            <img src="./img/Catacombs.jpg" alt="CATACOMBS">
+                                        </div>
+                                        <a>catacombs</a>
+                                    </div>
+                                </td>
+                                <td>USD 189,00</td>
+                                <td>
+                                    USD 189,00 <br>
+                                    только 1 осталось
+                                </td>
+                                <td>2</td>
+                                <td class="reserve-pages-slect-td">
+                                    <span>комнаты</span>
+                                    <select name="rooms_quantity" id="" class="reserve-pages-select">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </td>
+
+                            </tr>
+
+                            <tr class="reserve-pages-item">
+                                <td class="reserve-pages-firsTd">
+                                    <div class="reserve-pages-tb-type">
+                                        <div class="reserve-pages-tb-type-img-container">
+                                            <img src="./img/Catacombs.jpg" alt="CATACOMBS">
+                                        </div>
+                                        <a>catacombs</a>
+                                    </div>
+                                </td>
+                                <td>USD 189,00</td>
+                                <td>
+                                    USD 189,00 <br>
+                                    только 1 осталось
+                                </td>
+                                <td>2</td>
+                                <td class="reserve-pages-slect-td">
+                                    <span>комнаты</span>
+                                    <select name="rooms_quantity" id="" class="reserve-pages-select">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr class="reserve-pages-item">
+                                <td class="reserve-pages-firsTd">
+                                    <div class="reserve-pages-tb-type">
+                                        <div class="reserve-pages-tb-type-img-container">
+                                            <img src="./img/Catacombs.jpg" alt="CATACOMBS">
+                                        </div>
+                                        <a>catacombs</a>
+                                    </div>
+                                </td>
+                                <td>USD 189,00</td>
+                                <td>
+                                    USD 189,00 <br>
+                                    только 1 осталось
+                                </td>
+                                <td>2</td>
+                                <td class="reserve-pages-slect-td">
+                                    <span>комнаты</span>
+                                    <select name="rooms_quantity" id="" class="reserve-pages-select">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr class="reserve-pages-item">
+                                <td class="reserve-pages-firsTd">
+                                    <div class="reserve-pages-tb-type">
+                                        <div class="reserve-pages-tb-type-img-container">
+                                            <img src="./img/Catacombs.jpg" alt="CATACOMBS">
+                                        </div>
+                                        <a>catacombs</a>
+                                    </div>
+                                </td>
+                                <td>USD 189,00</td>
+                                <td>
+                                    USD 189,00 <br>
+                                    только 1 осталось
+                                </td>
+                                <td>2</td>
+                                <td class="reserve-pages-slect-td">
+                                    <span>комнаты</span>
+                                    <select name="rooms_quantity" id="" class="reserve-pages-select">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                   
+                </div>
 
                 <ul class="reserve-pages-list">
                     <li class="reserve-pages-item">
